@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+
+        div {
+            display: none;
+            margin-bottom: 20px;
+            height: 200px;
+            background-color: #0099cc;
+        }
+
+
+    </style>
+
+    <script src="../jQuery%20version/jquery-1.12.4.js"></script>
+
+    <script>
+
+
+        $(document).ready(function () {
+
+            $('#btn1').click(function () {
+
+                $('div').show();
+
+            });
+
+            $('#btn2').click(function () {
+
+                $('div').text('i am content');
+            });
+1
+        });
+
+
+    </script>
+
+</head>
+<body>
+
+<input type="button" value="Display" id="btn1">
+<input type="button" value="input content" id="btn2">
+
+<div></div>
+<div></div>
+<div></div>
+
+
+<!--<script>
+
+    var btn1 = document.getElementById('btn1');
+    var btn2 = document.getElementById('btn2');
+
+    var divObjs = document.getElementsByTagName('div');
+
+
+    /**
+     *
+     * 不爽的地方
+     *
+     * 1. 需要遍历，需要嵌套
+     * 2. 找对象麻烦，方法少，还长
+     * 3. 兼容问题
+     * 4. 动画要依靠封装函数 animate
+     * 5. JS注册事件会覆盖，addEventListener( 有兼容问题 )
+     *
+     */
+
+    btn1.onclick = function () {
+
+        for (var i = 0; i < divObjs.length; i++) {
+
+            divObjs[i].style.display = 'block';
+        }
+
+    };
+
+
+    btn2.onclick = function () {
+
+        for (var i = 0; i < divObjs.length; i++) {
+
+            divObjs[i].innerText = 'I am a div';
+        }
+
+    };
+
+</script>-->
+
+
+</body>
+</html>

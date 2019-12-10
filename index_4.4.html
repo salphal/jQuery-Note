@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <script src="jQuery version/jquery-1.12.4.min.js"></script>
+
+
+</head>
+<body>
+
+
+<!--------------------------------------------------------------------------------------------------------------------->
+
+
+<input type="text" id="txt1">
+
+<input type="button" value="哈哈" id="btn1">
+
+
+<script>
+
+
+    $(function () {
+
+        var txt1 = $('#txt1');
+
+        txt1.focus(function () {
+
+            if ($(this).val() === '洋酒') {
+
+                $(this).val();
+
+            }
+        });
+
+        txt1.blur(function () {
+
+
+            if ($(this) === '') {
+
+                $(this).val('洋酒');
+            }
+        });
+
+    });
+
+
+</script>
+
+
+<!--------------------------------------------------------------------------------------------------------------------->
+
+
+<!--获取可视区域的宽高-->
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+<script>
+
+
+    $(window).resize(function () {
+
+        console.log($(window).width());
+
+        console.log($(window).height());
+
+    });
+
+
+</script>
+
+
+<!--------------------------------------------------------------------------------------------------------------------->
+
+
+</body>
+</html>

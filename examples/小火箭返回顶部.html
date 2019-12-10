@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <script src="../jQuery version/jquery-1.12.4.min.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            height: 8000px;
+        }
+
+        a {
+            color: #FFF;
+        }
+
+        .actGoTop {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            width: 150px;
+            height: 195px;
+            display: none;
+            z-index: 100;
+        }
+
+        .actGoTop a, .actGoTop a:link {
+            width: 150px;
+            height: 195px;
+            display: inline-block;
+            background: url(../images/4.4-2gotop.png) no-repeat;
+            outline: none;
+        }
+
+        .actGoTop a:hover {
+            width: 150px;
+            height: 195px;
+            background: url(../images/4.4-2gotop.gif) no-repeat;
+            outline: none;
+        }
+    </style>
+
+
+    <script>
+
+
+        $(function () {
+
+            $(window).scroll(function () {
+
+                if ($(window).scrollTop() >= 1000) {
+
+                    $('.actGoTop').fadeIn();
+
+                } else {
+
+                    $('.actGoTop').fadeOut();
+                }
+
+            });
+
+
+            $('.actGoTop').click(function () {
+
+                /**
+                 *
+                 * 为了兼容：所以设置 html body
+                 *
+                 */
+
+                $('html, body').stop().animate({scrollTop: 0}, 3000);
+
+
+            });
+
+        });
+
+
+    </script>
+
+
+</head>
+<body>
+
+
+<div class="actGoTop">
+    <a href="javascript:;" title="Top"/>
+</div>
+
+
+
+
+
+
+</body>
+</html>

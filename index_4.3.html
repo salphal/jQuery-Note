@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <script src="jQuery version/jquery-1.12.4.min.js"></script>
+
+
+    <style>
+
+        input[type = 'button'] {
+
+            padding: 10px 20px;
+            border: 1px solid #333;
+            color: #333;
+        }
+
+        input[type = 'button']:hover {
+
+            border: none;
+            background-color: #ccc;
+            color: black;
+
+        }
+
+        .basic {
+            background-color: pink;
+            font-size: 32px;
+            color: red;
+        }
+
+        .bigger {
+            font-size: 40px;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+
+<!--------------------------------------------------------------------------------------------------------------------->
+
+
+<!--css 修改单个样式-->
+<!--css 一次性修改多个样式-->
+<!--css 获取样式的值-->
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+<ul id="ex1">
+    <li>高圆圆</li>
+    <li>周二珂</li>
+    <li>冯提木</li>
+    <li>郑爽</li>
+</ul>
+
+
+<script>
+
+
+    /**
+     *
+     * .css(name, value);
+     * @name: 样式名;
+     * @value: 样式值;
+     *
+     */
+
+    $(function () {
+
+
+        // 设置单个样式
+        //
+        // $('#ex1 > li')
+        //     .css('backgroundColor', 'pink')
+        //     .css('color', '#333')
+        //     .css('padding', '10px');
+
+
+        // 一次性设置多个样式
+        //
+        //利用 json 数据类型，简化代码
+        $('#ex1 > li').css({
+
+            backgroundColor: 'pink',
+            color: '#333',
+            fontSize: '16px',
+            padding: '10px'
+        });
+
+
+        // 获取单个样式值
+        //
+        var ex1Li = $('#ex1 li');
+
+        ex1Li.eq(0).css('fontSize', '12px');
+        ex1Li.eq(1).css('fontSize', '26px');
+        ex1Li.eq(2).css('fontSize', '18px');
+        ex1Li.eq(3).css('fontSize', '32px');
+
+        //获取单个样式( 返回多个元素中的第一个元素的属性值 )
+        console.log(ex1Li.css('fontSize'));                   //12px
+
+        //获取指定元素的属性值
+        console.log(ex1Li.eq(2).css('fontSize'));             //18px
+
+    });
+
+</script>
+
+
+<!--------------------------------------------------------------------------------------------------------------------->
+
+
+<!--class-->
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+<input type="button" value="添加 basic 类" id="btn1">
+<input type="button" value="添加 bigger 类" id="btn2">
+
+<input type="button" value="移除 bigger 类" id="btn3">
+
+<input type="button" value="判断是否有 bigger 类" id="btn4">
+
+<input type="button" value="切换类" id="btn5">
+
+
+<div id="box1" class="aa bb cc dd"></div>
+
+<ul id="ul1">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+
+
+<script>
+
+
+    // 删除 dd 类名
+    //
+    // var btn1 = document.getElementById('btn');
+    // var box1 = document.getElementById('box1');
+    //
+    // btn1.onclick = function () {
+    //
+    //     box1.className = 'aa bb cc';
+    // };
+
+
+    $(function () {
+
+        $('#btn1').click(function () {
+
+            //增加类
+            $('#ul1 li').addClass('basic');
+        });
+
+        $('#btn2').click(function () {
+
+            //增加类
+            $('#ul1 li').addClass('bigger');
+        });
+
+        $('#btn3').click(function () {
+
+            //移除类
+            $('#ul1 li').removeClass('basic bigger');
+        });
+
+        $('#btn4').click(function () {
+
+            //判断是否有这个类
+            console.log($('#ul1 li').hasClass('bigger'));
+
+        });
+
+        console.log('hah');
+
+
+        /**
+         *
+         * 判断 li 中是否有 basic 这个类，有则删除，无则创建
+         *
+         * toggleClass(className);
+         *
+         */
+
+        $('#btn5').click(function () {
+
+            // var liObjs = $('#ul1 li');
+            //
+            // if (liObjs.hasClass('basic')) {
+            //
+            //     liObjs.removeClass('basic');
+            //
+            // } else {
+            //
+            //     liObjs.addClass('basic');
+            // }
+
+            $('#ul1 li').toggleClass('basic');
+        });
+
+    });
+
+    .log
+
+
+</script>
+
+
+<!--------------------------------------------------------------------------------------------------------------------->
+
+
+</body>
+</html>

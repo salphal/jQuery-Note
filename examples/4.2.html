@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="../jQuery%20version/jquery-1.12.4.js"></script>
+
+    <link rel="stylesheet" href="../../styles/normalize.css">
+
+    <style>
+
+        li {
+            padding: 10px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+
+<ul>
+    <li>I am a li-1</li>
+    <li>I am a li-2</li>
+    <li>I am a li-3</li>
+    <li>I am a li-4</li>
+    <li>I am a li-5</li>
+    <li>I am a li-6</li>
+    <li>I am a li-7</li>
+    <li>I am a li-8</li>
+    <li>I am a li-9</li>
+    <li>I am a li-10</li>
+</ul>
+
+
+<script>
+
+
+    // $(function () {
+    //
+    //     var liObjs = document.getElementsByTagName('li');
+    //
+    //     for (var i = 0; i < liObjs.length; i++) {
+    //
+    //         if (i % 2 === 0) {
+    //
+    //             liObjs[i].style.backgroundColor = 'pink';
+    //
+    //         } else {
+    //
+    //             liObjs[i].style.backgroundColor = 'green';
+    //         }
+    //     }
+    // });
+
+
+    // $(function () {
+    //
+    //     //$liObjs 是 jQ 对象
+    //     //增加 $ 为了区分是 jQ 对象
+    //     var $liObjs = $('li');
+    //
+    //     for (var i = 0; i < $liObjs.length; i++) {
+    //
+    //         if (i % 2 === 0) {
+    //
+    //             //$liObj[i] 属于 jQ 对象所包含的 JS 对
+    //             //所以可以调用 JS 的方法
+    //             $liObjs[i].style.backgroundColor = 'pink';
+    //
+    //         } else {
+    //
+    //             $liObjs[i].style.backgroundColor = 'green';
+    //         }
+    //     }
+    // });
+
+
+    $(function () {
+
+        $('li:even').css('backgroundColor', 'pink');
+
+        $('li:odd').css('backgroundColor', 'green');
+
+    });
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
