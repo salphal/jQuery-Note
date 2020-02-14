@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .demo {
+            margin-bottom: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+
+        .demo.active{
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<div class="demo active"></div>
+<div class="demo"></div>
+<div class="demo"></div>
+
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+
+
+<script>
+
+
+    $('.demo').click(function (e) {
+
+        $('.demo').removeClass('active');
+
+        $(this).addClass('active');
+
+        /**
+         * 使用 css 设置会产生
+         *
+         * 更改样式复杂时，代码量相对较大
+         * 更改不同元素时，代码量相对较大
+         * 不能像 css 文件一样缓存本地
+         * 请求次多次需要更多的文件信息
+         * DOM 渲染增加
+         * 代码冗余
+         */
+
+        // $('.demo').css({backgroundColor: 'orange'});
+        // $(this).css({backgroundColor: 'red'});
+    });
+
+
+</script>
+
+
+
+
+</body>
+</html>

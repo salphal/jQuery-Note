@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        .wrapper {
+            position: relative;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+
+<div class="wrapper">
+    <div class="box">
+        <span>123</span>
+    </div>
+</div>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+    /**
+     * offsetParent(): offsetParent | documentElement;
+     *
+     * 返回相对于当前元素的就近有定位父级元素
+     */
+
+    console.log($('span').offsetParent());                  // wrapper
+
+</script>
+
+
+</body>
+</html>

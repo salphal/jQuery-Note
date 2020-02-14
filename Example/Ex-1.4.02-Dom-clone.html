@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        .btn {
+            margin: 20px 10px 0 0;
+            text-align: left;
+            padding: 4px 8px;
+            color: black;
+        }
+
+        .demo {
+            padding: 20px;
+            color: #fff;
+            width: 100px;
+            border: 1px solid black;
+        }
+
+        .des {
+            display: none;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+
+<div class="demo" style=" height: 100px; background-color: red" data-id="101">click me!( alert test )></div>
+
+<p class="des des1">haven't alert event</p>
+<p class="des des2">have alert event</p>
+
+<p>include css style of demo clone in body </p>
+
+<button class="btn btn1">demo.clone<b style="color: red">nothing</b>)</button>
+
+<button class="btn btn2">demo.clone(<b style="color: red">true</b>)</button>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    $('.demo').click(function () {
+
+        alert('test');
+
+    });
+
+    /**
+     * clone(dataAndEvents, deepDataAndEvents): jQuery;
+     *
+     *
+     */
+
+    $('.btn1').click(function () {
+
+        $('.demo').clone().appendTo('body').after($('.des1').removeClass());
+
+    });
+
+    $('.btn2').click(function () {
+
+        $('.demo').clone(true).appendTo('body').after($('.des2').removeClass());
+
+    });
+
+
+</script>
+
+
+</body>
+</html>

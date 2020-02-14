@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<div class="wrapper">
+    <form action="">
+
+        <h1>Fruit</h1>
+        <label for="fruit-all">All: </label><input type="checkbox" name="fruit" id="all">
+        <label for="banana">banana: </label><input type="checkbox" name="fruit" id="banana">
+        <label for="apple">apple: </label><input type="checkbox" name="fruit" id="apple">
+        <label for="orange">orange: </label><input type="checkbox" name="fruit" id="orange">
+
+        <h1>NBA</h1>
+        <label for="nba-all">All: </label><input type="checkbox" name="nba" id="all">
+        <label for="rose">rose: </label><input type="checkbox" name="nba" id="rose">
+        <label for="current">current: </label><input type="checkbox" name="nba" id="current">
+        <label for="james">james: </label><input type="checkbox" name="nba" id="james">
+    </form>
+</div>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * nextUntil()
+     *
+     *
+     */
+
+
+    $('h1 + label').next().click(function () {
+
+        if ($(this).prop('checked')) {
+
+            $(this).nextUntil('h1', 'input[type="checkbox"]').prop('checked', true);
+
+        } else {
+
+            $(this).nextUntil('h1', 'input[type="checkbox"]').prop('checked', false);
+        }
+    });
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+
+        table,
+        th,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            padding: 4px 8px;
+        }
+
+
+        .template {
+            display: none;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+
+<table class="student-table">
+    
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Class</th>
+    </tr>
+    <tr class="template">
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+</table>
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    let studentArr = [
+        {
+            name: 'alpha',
+            age: 18,
+            class: 1
+        },
+        {
+            name: 'beta',
+            age: 17,
+            class: 1
+        },
+        {
+            name: 'omega',
+            age: 16,
+            class: 1
+        },
+    ];
+
+
+    let oStudentTable = $('.student-table');
+
+    studentArr.forEach(function (value) {
+
+        let oCloneDom = $('.template').clone().removeClass();
+
+        oCloneDom
+            .find('td')
+            .eq(0)
+            .text(value.name)
+            .next()
+            .text(value.age)
+            .next()
+            .text(value.class);
+
+        oStudentTable.append(oCloneDom);
+    });
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<ul>
+    <span>span1</span>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <span>span2</span>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <span>span3</span>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+</ul>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * siblings(?filterCondition: string);
+     *
+     * 选择同一父级下的其他兄弟元素( 根绝筛选条件 )
+     */
+
+
+    $('li').eq(4)
+        .css({backgroundColor: 'red'})
+        .siblings('span')
+        .css({backgroundColor: 'orange'});
+
+
+</script>
+
+
+</body>
+</html>

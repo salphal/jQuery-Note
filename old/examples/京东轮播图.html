@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        .slider {
+            height: 340px;
+            width: 790px;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .slider li {
+            position: absolute;
+            display: none;
+        }
+
+        .slider li:first-child {
+            display: block;
+        }
+
+
+        .arrow {
+            display: none;
+        }
+
+        .slider:hover .arrow {
+            display: block;
+        }
+
+        .arrow-left,
+        .arrow-right {
+            width: 30px;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 60px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 30px;
+        }
+
+        .arrow-left:hover,
+        .arrow-right:hover {
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        .arrow-left {
+            left: 0;
+        }
+
+        .arrow-right {
+            right: 0;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <script src="../../jQuery%20version/jquery-1.12.4.min.js"></script>
+
+
+    <script>
+
+
+        $(function () {
+
+            var count = 0;
+
+            $('.arrow-right').click(function () {
+
+                count++;
+
+                if (count === 8) {
+
+                    count = 0;
+                }
+
+                $('.slider li').eq(count).fadeIn().siblings('li').fadeOut();
+            });
+
+            $('.arrow-left').click(function () {
+
+                count--;
+
+                if (count === -1) {
+
+                    count = $('.slider li').length;
+                }
+
+                $('.slider li').eq(count).fadeIn().siblings('li').fadeOut();
+
+                $('#slider').animate();
+
+
+
+            });
+
+
+        });
+
+
+
+
+
+
+
+    </script>
+
+
+</head>
+<body>
+
+
+
+<div class="slider">
+    <ul>
+        <li><a href="#"><img src="../images/jdlb01.jpg" alt=""></a></li>
+        <li><a href="#"><img src="../images/jdlb02.jpg" alt=""></a></li>
+        <li><a href="#"><img src="../images/jdlb03.jpg" alt=""></a></li>
+        <li><a href="#"><img src="../images/jdlb04.jpg" alt=""></a></li>
+        <li><a href="#"><img src="../images/jdlb05.jpg" alt=""></a></li>
+        <li><a href="#"><img src="../images/jdlb06.jpg" alt=""></a></li>
+        <li><a href="#"><img src="../images/jdlb07.jpg" alt=""></a></li>
+        <li><a href="#"><img src="../images/jdlb08.jpg" alt=""></a></li>
+    </ul>
+    <!--箭头-->
+    <div class="arrow">
+        <span class="arrow-left">&lt;</span>
+        <span class="arrow-right">&gt;</span>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <ul>
+        <li>
+            <ul data-id="101">
+                <li>nike</li>
+                <li>200$</li>
+                <li>
+                    <button>add</button>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul data-id="102">
+                <li>adidas</li>
+                <li>200$</li>
+                <li>
+                    <button>add</button>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+    /**
+     * closest(selector: string): recentFatherJqArr;
+     *
+     * 返回指定元素就近的单个父级( 或多个父级集合 )
+     */
+
+    console.log($('button').eq(0).closest('ul'));
+
+
+</script>
+
+</body>
+</html>

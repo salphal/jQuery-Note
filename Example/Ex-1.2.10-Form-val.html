@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<form action="" method="get">
+
+    <h3>选择你喜欢的明星</h3>
+
+    <select name="star" id="">
+        <option value="s">詹姆斯</option>
+        <option value="a" selected>库里</option>
+        <option value="b">奥拉迪波</option>
+    </select>
+
+    <h3>一句话简单介绍你喜欢的明星</h3>
+    <input type="text" name="easy" value="alpha">
+
+    <h3></h3>
+    三分准: <input type="checkbox" name="special" value="three">
+    组织好: <input type="checkbox" name="special" value="org">
+    突破强: <input type="checkbox" name="special" value="strong">
+
+    <h3>具体描述该明星的技术特点</h3>
+
+    <textarea name="des" id="" cols="30" rows="10"></textarea>
+
+    <input type="submit" value="login">
+
+</form>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * serialize();
+     *
+     * serialize: 串联
+     *
+     * 获取表单中所有的信息，并返回以 '&' 连接的字符串 =>'key:value&key:value&key:value'
+     */
+
+    $('form').serialize();                                  // 'star=a&easy=alpha&des='
+
+
+    /**
+     * val();
+     *
+     * 仅可以作用于 form 表单的标签中使用
+     *
+     * 在同父级下，有且仅获取一个DOM元素的 value 值
+     * 无论是否选择单个元素，或父级元素( 返回第一个元素的 value 值 )，都只返回单个元素的 value 值
+     */
+
+    // get value
+
+    console.log($('input[type=checkbox]').val());           // three
+
+    // set value
+
+    $('input[type=checkbox]').val(function (index, currentValue) {
+
+        return currentValue + index;
+    });
+
+
+    // 仅改变了 input 输入框中的 value 值, 并未改变行间样式 value 的属性值
+
+    $('input').eq(0).val('hello world');
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

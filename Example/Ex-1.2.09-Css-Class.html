@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div class="demo">demo1</div>
+<div class="demo">demo2</div>
+<div class="demo">demo3</div>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+
+<script>
+
+
+    /**
+     * addClass(className: string | fn(idx, ele););
+     *
+     */
+
+    // $('.demo').eq(0).addClass('active');                    // <div class="demo active">demo1</div>
+
+    // $('.demo').eq(0).addClass('active alpha');              // <div class="demo active alpha">demo1</div>
+
+    // $('.demo').addClass(function (index, ele) {
+    //
+    //     return 'alpha' + index;
+    // });
+
+    // <div class="demo alpha1">demo1</div>
+    // <div class="demo alpha2">demo2</div>
+    // <div class="demo alpha3">demo3</div>
+
+
+    /**
+     * removeClass(className: string | fn(idx, ele););
+     *
+     */
+
+    // $('.demo').eq(0).removeClass('demo');                   // <div>demo1</div>
+
+    // 可以删除没有的 类名( 不会报错，兼容性: 有则删除，无则忽视 )
+    // $('.demo').eq(0).removeClass('demo alpha');             // <div>demo1</div>
+
+    // $('.demo').removeClass();                               // delete all className
+
+    $('.demo').removeClass(function (index, ele) {
+
+        if (index % 2 == 0) {
+
+            return 'demo'
+        }
+
+        // return '' || undefined;                          // delete all className
+    });
+
+    // <div>demo1</div>
+    // <div class="demo">demo2</div>
+    // <div>demo3</div>
+
+
+    /**
+     * hasClass(className: string | function): boolean;
+     *
+     * 判断当前所选jq类其中的元素是否有一个含有输入的类名，是则返回 true，反之 false
+     */
+
+    console.log($('.demo').hasClass('demo'));               // true
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

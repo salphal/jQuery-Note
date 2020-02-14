@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        .demo {
+            padding: 10px;
+            margin-bottom: 10px;
+
+            border: 1px solid black;
+        }
+
+        .btn {
+            margin: 20px 10px 0 0;
+            text-align: left;
+            padding: 4px 8px;
+            color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="demo">
+    <div class="demo demo1 demo4">
+        <span>span1</span>
+        <span>span2</span>
+        <span>span3</span>
+    </div>
+</div>
+
+<div class="demo">
+    <div class="demo demo2 demo4">
+        <p>paragraph1</p>
+        <p>paragraph2</p>
+        <p>paragraph3</p>
+    </div>
+</div>
+
+<div class="demo demo6">
+    wrapper
+    <div class="demo demo5">
+        content
+        <div class="demo">
+            <div class="demo">text
+                <div class="demo4">center</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<button class="btn btn1">demo.wrap</button>
+<button class="btn btn2">demo.wrapInner</button>
+<button class="btn btn3">demo.wrapAll</button>
+<button class="btn btn4">demo.unwrap</button>
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * currentSelector.wrap(wrapper: any[ html | fn(idx) ]);
+     *
+     * 为当前所选元素添加父级
+     */
+
+    $('.btn1').click(function () {
+
+        $('.demo').wrap('<div class="wrap" style="background-color:red;padding:20px;"></div>');
+
+    });
+
+
+    /**
+     * wrapInner(wrapper: any[ html | fn(idx) ]);
+     *
+     * 为所选元素中所有子元素分别同一个父级
+     */
+
+
+    $('.btn2').click(function () {
+
+        $('.demo').wrapInner('<div class="wrapInner" style="background-color:orange;"></div>');
+
+    });
+
+
+    /**
+     * wrapAll(wrapper: any[ html | fn(idx) ])
+     *
+     * 为所选元中所有自元素添加同一父级
+     */
+
+    $('.btn3').click(function () {
+
+        $('.demo').wrapAll('<div class="wrapAll" style="background-color:yellow;"></div>');
+    });
+
+
+    /**
+     * unwrap();
+     *
+     *
+     */
+
+
+    $('.btn4').click(function () {
+
+        $('.demo4').unwrap();
+
+    });
+
+
+</script>
+
+
+</body>
+</html>

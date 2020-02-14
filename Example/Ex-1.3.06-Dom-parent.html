@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--<div class="shop" data-id="101">-->
+<!--    <p>basketball-nike</p>-->
+<!--    <button>add</button>-->
+<!--</div>-->
+
+<!--<div class="shop" data-id="102">-->
+<!--    <p>basketball-adidas</p>-->
+<!--    <button>add</button>-->
+<!--</div>-->
+
+<div class="wrapper">
+
+</div>
+
+<p></p>
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    let showArrs = [
+            {name: 'nike', id: '101'},
+            {name: 'adidas', id: '102'}
+        ],
+        str = '',
+        carArr = [];
+
+    showArrs.forEach(function (value, index, array) {
+
+        str += `<div class="shop" data-id="${value.id}">
+                    <p>${value.name}</p>
+                    <button>add</button>
+                </div>`;
+    });
+
+    $('.wrapper').html(str);
+
+    // $('button').click(function () {
+    //
+    //     carArr.push($(this).parent().attr('data-id'));
+    //
+    //     $('p').text(carArr);
+    // });
+
+
+    /**
+     * parent();
+     *
+     * 向上选择一层父级
+     */
+
+    // $('button').click(function () {
+    //
+    //     console.log($(this).parent();
+    //
+    // });
+
+
+    /**
+     * parents(filterCondition?: string);
+     *
+     * 向上选择指定层父级
+     */
+
+    $('button').click(function () {
+
+        console.log($(this).parents('.shop'));
+
+    });
+
+
+</script>
+
+
+</body>
+</html>

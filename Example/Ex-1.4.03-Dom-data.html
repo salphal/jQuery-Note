@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+
+        button {
+            padding: 4px 8px;
+            border-radius: 2px;
+        }
+
+        .template {
+            display: none;
+        }
+
+        .wrapper {
+            width: 30%;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        .wrapper div button {
+            float: right;
+        }
+
+        .wrapper div {
+            overflow: hidden;
+        }
+
+        .wrapper > div {
+            padding-bottom: 8px;
+            border-bottom: 1px solid black;
+        }
+
+        .wrapper .template span {
+            margin-right: 20px;
+        }
+
+        .wrapper > button {
+            float: right;
+        }
+
+        .wrapper .show span {
+            display: inline-block;
+            text-align: left;
+            float: right;
+        }
+
+        .wrapper .show:after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<div class="wrapper">
+    <div class="template">
+        <p></p>
+        <span></span>
+        <button>add</button>
+    </div>
+    <p class="show">
+        <span class="sum"></span>
+        <span>Sum: </span>
+    </p>
+</div>
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * data();
+     *
+     * jQuery 数据渲染统一使用 data(); data 数据池 => 映射 DOM
+     *
+     * vue 中使用行间 data-xx 是为了满足框架的底层自动渲染 DOM
+     *
+     * 存储数据至 jQuery，在 html 行间不显示
+     *
+     * 在js 中可直接调用，若自定义的 data-xxx='xxx'，可通过此方法获取
+     */
+
+    // data -> jQueery => dom <- data => view ( 依然属于 dom 渲染，频繁渲染 ) 不推荐
+
+    let shopArr = [
+        {
+            name: 'Alpha',
+            shopName: 'nike',
+            price: '110',
+            id: '1001'
+        },
+        {
+            name: 'Beta',
+            shopName: 'nike',
+            price: '90',
+            id: '2002'
+        },
+        {
+            name: 'Omega',
+            shopName: 'nike',
+            price: '120',
+            id: '3003'
+        }
+    ];
+
+    shopArr.forEach(function (value) {
+
+        let oCloneDom = $('.template').clone().removeClass();
+
+        oCloneDom
+            .data({
+                id: value.id,
+                price: value.price,
+                shopName: value.shopName
+            })
+            .find('p').text(value.name)
+            .next().text(value.price);
+
+        oCloneDom.insertBefore('.show');
+    });
+
+    $('.wrapper button').click(function () {
+
+        $('.sum').text(Number($('.sum').text()) + Number($(this).parent().data('price')));
+
+        console.log($(this).parent().data('id'));
+    });
+
+
+</script>
+
+
+</body>
+</html>

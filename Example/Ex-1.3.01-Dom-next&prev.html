@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p class="demo">previou paragraph</p>
+
+<button>change</button>
+
+<p class="demo">next paragraph</p>
+
+<span class="demo">hello world</span>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * next(filterCondition: string);
+     *
+     * 选择下一个兄弟元素
+     */
+
+    /**
+     * prev(filterCondition: string);
+     *
+     * 选择上一个兄弟元素
+     */
+
+
+    // $('button').click(function () {
+    //
+    //     $(this)
+    //         .prev('p')
+    //         .css({});
+    // });
+
+
+    $('button').click(function () {
+
+        $(this)
+            .next('p')
+            .css({});
+    });
+
+
+</script>
+
+
+
+
+</body>
+</html>

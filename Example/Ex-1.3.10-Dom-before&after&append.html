@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            color: #FFFFFF;
+            font-size: 20px;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+
+        .wrapper {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid black;
+        }
+
+        .wrapper div {
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        .wrapper .box1 {
+            background-color: red;
+        }
+
+        .wrapper .box2 {
+            background-color: orange;
+        }
+
+        .content {
+            width: 200px;
+            height: 50px;
+            background-color: blue;
+            line-height: 50px;
+        }
+
+        #inertBeforeBtn,
+        #beforeBtn,
+        #inertAfterBtn,
+        #afterBtn,
+        #appendToBtn,
+        #appendBtn,
+        #prependToBtn,
+        #prependBtn {
+            margin-top: 20px;
+            text-align: left;
+            padding: 4px 8px;
+            color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<div class="wrapper">
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+</div>
+<div class="content">content</div>
+
+<button id="inertBeforeBtn">content inertBefore box1</button>
+
+<button id="beforeBtn">box1 before content</button>
+
+<br>
+
+<button id="inertAfterBtn">content inertAfter box2</button>
+
+<button id="afterBtn">box2 after content</button>
+
+<br>
+
+<button id="appendToBtn">content appendTo wrapper</button>
+
+<button id="appendBtn">wrapper append content</button>
+
+<br>
+
+<button id="prependToBtn">content prependTo wrapper</button>
+
+<button id="prependBtn">wrapper prepend content</button>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * currentSelector.insertBefore(originSelector: string);
+     *
+     * 把元素插入在 originSelector 之前
+     */
+
+    $('#inertBeforeBtn').click(function () {
+
+        $('.content').insertBefore('.box1');
+
+    });
+
+
+    /**
+     *
+     *
+     *
+     */
+
+    $('#beforeBtn').click(function () {
+
+        console.log('test');
+
+        $('.box1').before($('.content'));
+    });
+
+
+    /**
+     *
+     *
+     *
+     */
+
+    $('#inertAfterBtn').click(function () {
+
+        $('.content').insertAfter('.box2');
+    });
+
+
+    /**
+     *
+     *
+     *
+     */
+
+    $('#afterBtn').click(function () {
+
+
+        $('.box2').after($('.content'));
+    });
+
+
+    /**
+     *
+     *
+     *
+     */
+
+
+
+</script>
+
+</body>
+</html>

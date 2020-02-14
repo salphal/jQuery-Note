@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div class="wrapper">
+    <ul>
+        <li>1</li>
+        <li class="demo">2</li>
+        <li>3</li>
+        <li>4</li>
+        <li class="demo">5</li>
+    </ul>
+</div>
+
+<ul>
+    <li>1</li>
+    <li class="demo">2</li>
+    <li>3</li>
+    <li>4</li>
+    <li class="demo">5</li>
+</ul>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    // $('.wrapper ul')
+    //     .find('li')
+    //     .filter('.demo')
+    //     .css({color: 'red'});
+
+    /**
+     * filter();
+     *
+     *
+     */
+
+    $('.wrapper ul li').filter(function (index, ele) {
+
+        return index % 2 == 0;
+
+    }).css({color: 'red'});
+
+    /**
+     * not();
+     *
+     *
+     */
+
+    $('.wrapper ul li').not(function (index, ele) {
+
+        return index % 2 == 0;
+
+    }).css({color: 'blue'});
+
+
+</script>
+
+
+
+</body>
+</html>

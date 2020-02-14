@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div class="wrapper">
+    <form action="">
+
+        <label for="all-list">All list: </label><input type="checkbox" id="all-list">
+
+        <h1>吃货清单</h1>
+
+        <h2>Fruit</h2>
+        <label for="fruit-list">All: </label><input type="checkbox" id="fruit-list">
+        <label for="banana">banana: </label><input type="checkbox" id="banana">
+        <label for="apple">apple: </label><input type="checkbox" id="apple">
+        <label for="orange">orange: </label><input type="checkbox" id="orange">
+
+        <h2>vegetable</h2>
+        <label for="vegetable-list">All: </label><input type="checkbox" id="vegetable-list">
+        <label for="tomato">tomato: </label><input type="checkbox" id="tomato">
+        <label for="egg">egg: </label><input type="checkbox" id="egg">
+        <label for="carrot">carrot: </label><input type="checkbox" id="carrot">
+
+        <h2></h2>
+
+        <h1>明星清单</h1>
+
+        <label for="star-list">Star list: </label><input type="checkbox" id="star-list">
+
+        <h2>NBA</h2>
+        <label for="nba-all">All: </label><input type="checkbox" id="nba-all">
+        <label for="rose">rose: </label><input type="checkbox" id="rose">
+        <label for="curry">curry: </label><input type="checkbox" id="curry">
+        <label for="james">james: </label><input type="checkbox" id="james">
+    </form>
+</div>
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    $('#all-list').click(function () {
+
+        if ($(this).prop('checked')) {
+
+            $(this).nextAll('input[type="checkbox"]').prop('checked', true);
+
+        } else {
+
+            $(this).nextAll('input[type="checkbox"]').prop('checked', false);
+        }
+    });
+
+
+    $('h1 + label').next().click(function () {
+
+        if ($(this).prop('checked')) {
+
+            $(this).nextUntil('h1', 'input[type="checkbox"]').prop('checked', true);
+
+        } else {
+
+            $(this).nextUntil('h1', 'input[type="checkbox"]').prop('checked', false);
+        }
+    });
+
+
+    $('h2 + label').next().click(function () {
+
+        if ($(this).prop('checked')) {
+
+            $(this).nextUntil('h2', 'input[type="checkbox"]').prop('checked', true);
+
+        } else {
+
+            $(this).nextUntil('h2', 'input[type="checkbox"]').prop('checked', false);
+        }
+    });
+
+
+</script>
+
+
+</body>
+</html>

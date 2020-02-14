@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div class="wrapper">
+    <label for="all">all: </label><input type="checkbox" name="fruit" id="all">
+    <label for="banana">banana: </label><input type="checkbox" name="fruit" id="banana">
+    <label for="apple">apple: </label><input type="checkbox" name="fruit" id="apple">
+    <label for="orange">orange: </label><input type="checkbox" name="fruit" id="orange">
+    <input type="submit" value="login">
+</div>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+    /**
+     * nextAll(filterCondition: string);
+     *
+     * 获取当前元素之后的所有兄弟元素( 可传筛选条件 )
+     */
+
+    /**
+     * prevAll(filterCondition: string);
+     *
+     * 获取当前元素之上的所有兄弟元素( 可传筛选条件 )
+     */
+
+
+    $('input[type=checkbox]').eq(0).click(function () {
+
+        if ($(this).prop('checked')) {
+
+            $(this).nextAll('input:checkbox').prop('checked', true);
+
+        } else {
+
+            $(this).nextAll('input[type="checkbox"]').prop('checked', false);
+        }
+    });
+
+
+</script>
+
+
+</body>
+</html>

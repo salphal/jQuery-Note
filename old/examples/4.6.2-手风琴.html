@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <script src="../../jQuery%20version/jquery-1.12.4.min.js"></script>
+
+    <style>
+
+        #box {
+
+            width: 1200px;
+            height: 400px;
+            border: 2px solid #000000;
+            margin: 100px auto;
+        }
+
+        #box li {
+            width: 240px;
+            height: 400px;
+            float: left;
+        }
+
+    </style>
+
+    <script>
+
+
+        $(function () {
+
+            $.fn.accordion = function (colors, width,) {
+
+                colors = colors || [];
+                width = width || 0;
+
+                var $li = this.find('li');
+
+                var boxLength = this.width();
+                var maxLength = boxLength - ($li.length - 1) * width;
+                var avgLength = boxLength / $li.length;
+
+
+                $li.each(function (i, e) {
+
+                    $(e).css('backgroundColor', colors[i]);
+                });
+
+
+                $li.on('mouseenter', function () {
+
+                    $(this).stop().animate({width: maxLength}).siblings().stop().animate({width: width});
+                });
+
+
+                $li.on('mouseleave', function () {
+
+                    $li.stop().animate({width: avgLength});
+                });
+            };
+
+            var colors = ['green', 'blue',  'yellow', 'cyan'];
+
+            $('#box').accordion(colors, 0);
+
+        });
+
+
+    </script>
+
+
+</head>
+<body>
+
+<ul id="box">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
