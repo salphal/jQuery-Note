@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div class="wrapper">
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+</div>
+
+<script src="jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    // $('.wrapper')
+    //     .css({position: 'relative'});
+    //
+    // $('.wrapper ul')
+    //     .css({listStyle: 'none'});
+    //
+    // $('.wrapper ul li')
+    //     .css({color: 'red'});
+
+    $('.wrapper')
+        .css({position: 'relative'})
+        .find('ul')
+        .css({listStyle: 'none'})
+        .find('li')
+        .css({color: 'red'});
+
+    /**
+     * prevObject: jq(document) -> .wrapper -> ul -> li
+     *
+     */
+
+    console.log($('.wrapper'));                         // prevObject: jq(document)
+
+    // 0: div.wrapper
+    // length: 1
+    // prevObject: jQuery.fn.init [document, context: document]
+    // context: document
+    // selector: ".wrapper"
+    // __proto__: Object(0)
+
+    console.log($('.wrapper').find('ul'));              // prevObject: jq(document) -> .wrapper -> ul
+
+    // 0: div.wrapper
+    // length: 1
+    // prevObject: jQuery.fn.init [document, context: document]
+    // context: document
+    // selector: ".wrapper"
+    // __proto__: Object(0)
+
+    console.log($('.wrapper').find('ul').find('li'));   // prevObject: jq(document) -> .wrapper -> ul -> li
+
+    // 0: li
+    // 1: li
+    // 2: li
+    // 3: li
+    // 4: li
+    // length: 5
+    // prevObject: jQuery.fn.init [ul, prevObject: jQuery.fn.init(1), context: document, selector: ".wrapper ul"]
+    // context: document
+    // selector: ".wrapper ul li"
+    // __proto__: Object(0)
+
+
+</script>
+
+
+</body>
+</html>

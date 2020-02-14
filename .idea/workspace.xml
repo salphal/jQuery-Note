@@ -2,7 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c663df75-bd24-444e-a0dd-79009fd716d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.0-jQ-Introduction.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.1-jQ-Selector.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.2.1-jQ-Dom.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.2.2-jQ-Css.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.2.3-jQ-html&amp;text&amp;size.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.2.4-jQ-Class.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EX-1.2.8-html&amp;text&amp;size.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex-1.1.1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex-1.1.2-myjQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex-1.2.1-$.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex-1.2.2-get&amp;eq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex-1.2.3-fined.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex-1.2.4-filter&amp;not.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex-1.2.5-is&amp;has.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex-1.2.6-is.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex-1.2.7-add&amp;end.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ex-1.2.9-Class.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myJQuery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.1-jQ event.md" beforeDir="false" afterPath="$PROJECT_DIR$/old/9.1-jQ event.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.1-jQ object.md" beforeDir="false" afterPath="$PROJECT_DIR$/old/9.1-jQ object.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.2-jQ selector.md" beforeDir="false" afterPath="$PROJECT_DIR$/old/9.2-jQ selector.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.3-jQ methods.md" beforeDir="false" afterPath="$PROJECT_DIR$/old/9.3-jQ methods.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.5-jQ event object.md" beforeDir="false" afterPath="$PROJECT_DIR$/old/9.5-jQ event object.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.6-jQ advanced.md" beforeDir="false" afterPath="$PROJECT_DIR$/old/9.6-jQ advanced.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index_4.1.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/index_4.1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index_4.3.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/index_4.3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index_4.4.html" beforeDir="false" afterPath="$PROJECT_DIR$/old/index_4.4.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,50 +41,108 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1.1-jQ event.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="-1253">
-                <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/1.1-jQ object.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="-1441" />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/1.2.4-jQ-Class.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="FIRST">
+                  <first_editor relative-caret-position="90">
+                    <caret line="6" selection-start-line="6" selection-end-line="6" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Ex-1.2.9-Class.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="925">
+                  <caret line="66" column="7" lean-forward="true" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/1.2.4-jQ-Class.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="FIRST">
+                  <first_editor relative-caret-position="90">
+                    <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Ex-1.2.9-Class.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Ex-1.1.2-myjQuery.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Ex-1.2.2-get&amp;eq.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/myJQuery.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Ex-1.2.4-filter&amp;not.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/EX-1.2.8-html&amp;text&amp;size.html" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.idea/jQuery-Note.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/code-comments.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/1.1-jQ-.md" />
+        <option value="$PROJECT_DIR$/1.0-jQ-Introduction.md" />
+        <option value="$PROJECT_DIR$/Ex1.1.1.html" />
+        <option value="$PROJECT_DIR$/Ex-1.1.2.html" />
+        <option value="$PROJECT_DIR$/1.1-jQ-Selector.md" />
+        <option value="$PROJECT_DIR$/Ex-1.2.1.html" />
+        <option value="$PROJECT_DIR$/Ex-1.2.2.html" />
+        <option value="$PROJECT_DIR$/Ex-1.2.3.html" />
+        <option value="$PROJECT_DIR$/Ex-1.2.2-get&amp;eq.html" />
+        <option value="$PROJECT_DIR$/Ex-1.2.3-fined.html" />
+        <option value="$PROJECT_DIR$/examples/Ex-1.2.4-.html" />
+        <option value="$PROJECT_DIR$/Ex-1.2.4-filter.html" />
+        <option value="$PROJECT_DIR$/1.2.5-is&amp;has.html" />
+        <option value="$PROJECT_DIR$/Ex-1.2.4-filter&amp;not.html" />
+        <option value="$PROJECT_DIR$/Ex-1.2.5-is&amp;has.html" />
+        <option value="$PROJECT_DIR$/Ex-1.2.6.html" />
+        <option value="$PROJECT_DIR$/Ex-1.2.6-is.html" />
+        <option value="$PROJECT_DIR$/Ex-1.2.7-add&amp;end.html" />
+        <option value="$PROJECT_DIR$/1.2-jQ-Dom.md" />
+        <option value="$PROJECT_DIR$/myJQuery.js" />
+        <option value="$PROJECT_DIR$/1.3-jQ-Css.md" />
+        <option value="$PROJECT_DIR$/EX-1.2.8-html.html" />
+        <option value="$PROJECT_DIR$/EX-1.2.8-html&amp;text.html" />
+        <option value="$PROJECT_DIR$/EX-1.2.8-html&amp;text&amp;size.html" />
+        <option value="$PROJECT_DIR$/1.2.3-jQ-.md" />
+        <option value="$PROJECT_DIR$/1.2.1-jQ-Dom.md" />
+        <option value="$PROJECT_DIR$/1.2.4-jQ-Class.md" />
+        <option value="$PROJECT_DIR$/Ex-1.2.9-Class.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="640" />
+    <option name="x" value="191" />
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="1177" />
+    <option name="width" value="1489" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -71,6 +156,10 @@
               <item name="jQuery-Note" type="b2602c69:ProjectViewProjectNode" />
               <item name="jQuery-Note" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="jQuery-Note" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -79,11 +168,26 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/old" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -97,6 +201,10 @@
       </list>
     </option>
   </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS,HIDE_INHERITED_FROM_OBJECT" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -108,27 +216,20 @@
       <option name="presentableId" value="Default" />
       <updated>1576229517051</updated>
       <workItem from="1576229518296" duration="46000" />
+      <workItem from="1581570237969" duration="3308000" />
+      <workItem from="1581574962454" duration="17827000" />
+      <workItem from="1581634040676" duration="13113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46000" />
+    <option name="totallyTimeSpent" value="34294000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="640" y="23" width="1280" height="1177" extended-state="0" />
-    <editor active="true" />
+    <frame x="191" y="23" width="1489" height="1027" extended-state="0" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1875" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Code comment" />
-      <window_info anchor="bottom" id="Tail" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Gerrit" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="GraphQL" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49898374" visible="true" weight="0.17192747" />
+      <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -136,10 +237,19 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Key Promoter X" />
+      <window_info anchor="bottom" id="Code comment" order="7" />
+      <window_info anchor="bottom" id="Tail" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Gerrit" order="11" />
+      <window_info anchor="bottom" id="GraphQL" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Key Promoter X" order="3" />
+      <window_info anchor="right" id="Structure" order="4" sideWeight="0.50101626" visible="true" weight="0.161182" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,20 +263,248 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.1-jQ event.md">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_4.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.0-jQ-Introduction.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-1253">
-            <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="315">
+            <caret line="19" selection-start-line="19" selection-end-line="19" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.1-jQ object.md">
+    <entry file="file://$PROJECT_DIR$/old/9.1-jQ object.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="450">
+            <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/9.1-jQ event.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="-1441" />
+          <first_editor relative-caret-position="15">
+            <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/4.1-experoence jQ.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex-1.2.2-get&amp;eq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+          <folding>
+            <element signature="e#292#866#0" />
+            <element signature="e#303#324#0" />
+            <element signature="e#910#1036#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex-1.1.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="50" column="10" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex-1.2.3-fined.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#333#349#0" />
+            <element signature="e#690#772#0" />
+            <element signature="e#722#739#0" />
+            <element signature="e#951#968#0" />
+            <element signature="e#1195#1203#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex-1.2.1-$.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex-1.1.2-myjQuery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery version/jquery-1.12.4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="2998" column="4" selection-start-line="2998" selection-start-column="4" selection-end-line="2998" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery version/jquery-3.0.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="3010" column="4" selection-start-line="3010" selection-start-column="4" selection-end-line="3010" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex-1.2.6-is.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex-1.2.5-is&amp;has.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex-1.2.4-filter&amp;not.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery version/jquery-2.2.4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myJQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="e#168#228#0" />
+            <element signature="e#278#1384#0" />
+            <element signature="e#289#416#0" />
+            <element signature="e#508#545#0" />
+            <element signature="e#665#748#0" />
+            <element signature="e#820#892#0" />
+            <element signature="e#962#1083#0" />
+            <element signature="e#1089#1299#0" />
+            <element signature="e#1207#1289#0" />
+            <element signature="e#1432#1913#0" />
+            <element signature="e#1481#1755#0" />
+            <element signature="e#1521#1745#0" />
+            <element signature="e#1565#1642#0" />
+            <element signature="e#1648#1731#0" />
+            <element signature="e#1765#1838#0" />
+            <element signature="e#2194#2202#0" />
+            <element signature="e#2255#2271#0" />
+            <element signature="e#2191#2689#0" />
+            <element signature="e#2198#2282#0" />
+            <element signature="e#2852#2966#0" />
+            <element signature="e#3126#3134#0" />
+            <element signature="e#3267#3283#0" />
+            <element signature="e#3770#3821#0" />
+            <element signature="e#3928#3936#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex-1.2.7-add&amp;end.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.1-jQ-Selector.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="2873">
+            <caret line="238" selection-start-line="238" selection-end-line="238" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.2.1-jQ-Dom.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="735">
+            <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.2.2-jQ-Css.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-949">
+            <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.2.3-jQ-html&amp;text&amp;size.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="525">
+            <caret line="35" selection-start-line="35" selection-end-line="35" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EX-1.2.8-html&amp;text&amp;size.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" selection-start-line="65" selection-end-line="65" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex-1.2.9-Class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="66" column="7" lean-forward="true" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.2.4-jQ-Class.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="90">
+            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>

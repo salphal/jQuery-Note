@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+
+<script src="jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * html();
+     *
+     * 获取同一父级中 html 时，只会返回第一个
+     */
+
+    console.log($('ul').html());                // string
+
+    // <li>1</li>
+    // <li>2</li>
+    // <li>3</li>
+    // <li>4</li>
+
+    console.log($('ul li').html());             // 1
+
+    console.log($('ul li').html('6'));
+
+    // <ul>
+    // <li>9</li>
+    // <li>9</li>
+    // <li>9</li>
+    // <li>9</li>
+    // </ul>
+
+    let arrName = ['alpha', 'beta', 'omega', 'gama'];
+
+    $('ul li').html(function (index, ele) {
+
+        return '<p style="color: orange;">' + arrName[index] + '</p>'
+    });
+
+
+    /**
+     * text();
+     *
+     *
+     */
+
+    console.log($('ul').text());                // string
+
+    // alpha
+    // beta
+    // omega
+    // gama
+
+    console.log($('ul li').text());                 // alphabetaomegagama
+
+    console.log($('ul li').text('9'));              // alphabetaomegagama
+
+
+    /**
+     * size(): number;
+     *
+     * dom.('ul li').length; == dom.('ul li').size();
+     */
+
+    console.log($('ul li').size());             // 4
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<ul>
+    <li>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </li>
+    <li>01</li>
+    <li>02</li>
+    <li>03</li>
+    <li>04</li>
+    <li>05</li>
+</ul>
+
+<div class="wrapper">
+    <span class="demo">span1</span>
+    <span class="demo">span2</span>
+    <p class="demo">p</p>
+    <span class="demo">span3</span>
+</div>
+
+
+<script src="jQuery%20version/jquery-2.2.4.js"></script>
+
+
+<script>
+
+
+
+    /**
+     * has();
+     *
+     *
+     */
+
+    $('li')
+        .has('ul')
+        .css({color: 'green'});
+
+    /**
+     * is();
+     *
+     * 是否有交集
+     */
+
+    let res = $('.wrapper .demo').is('span');
+
+    console.log(res);               // true
+
+
+</script>
+
+
+
+</body>
+</html>

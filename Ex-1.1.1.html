@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--Ex-1-->
+
+<div class="wrapper">
+    <ul>
+        <li>1</li>
+        <li data="alpha">2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+</div>
+
+
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+</ul>
+
+<!--Ex-2-->
+
+<div class="wrap">
+    <div class="demo">
+        <span>span1</span>
+    </div>
+    <div class="demo">
+        <p>p1</p>
+    </div>
+    <div class="demo">
+        <span>span2</span>
+    </div>
+</div>
+
+
+<script src="jQuery%20version/jquery-2.2.4.js"></script>
+
+
+<script>
+
+
+    $('.wrapper ul li').css({width: 100, height: 100, backgroundColor: 'red'})
+
+
+    let colorArr = ['red', 'blue', 'green'];
+
+    $('.wrap .demo').each(function (index, ele) {
+
+        $(ele).find('span').css({color: colorArr[index]});
+
+    });
+
+</script>
+
+
+</body>
+</html>
