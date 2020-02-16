@@ -1,6 +1,61 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+function startMove(ele, attrObj, callback) {
+
+    clearInterval(ele.timer);
+
+    let iSpeed = null,
+        iCur = null;
+
+    ele.timer = setInterval(function () {
+
+        let bStop = true;
+
+        for (var prop in attrObj) {
+
+            if (prop == 'opacity') {
+
+                iCur = parseFloat(getStyle(ele, prop)) * 100;
+
+            } else {
+
+                iCur = parseInt(getStyle(ele, prop));
+            }
+
+            iSpeed = (attrObj[prop] - iCur) / 7;
+
+            iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+
+            if (prop == 'opacity') {
+
+                ele.style.opacity = (iCur + iSpeed) / 100;
+
+            } else {
+
+                ele.style[prop] = iCur + iSpeed + 'px';
+
+            }
+
+            if (iCur != attrObj[prop]) {
+
+                bStop = false;
+            }
+        }
+
+        if (bStop) {
+
+            clearInterval(ele.timer);
+
+            typeof callback == 'function' && callback();
+        }
+
+    }, 30);
+}
+
+//-------------------------------------------------------------------------------------------------------------------//
+
+
 (function () {
 
     function jQuery(selector) {
@@ -183,6 +238,168 @@ jQuery.prototype.end = function () {
 
     return this.prevObj;
 };
+
+
+//-------------------------------------------------------------------------------------------------------------------//
+
+
+jQuery.prototype.myOn = function (type, handle) {
+
+    for (let i = 0; i < this.length; i++) {
+
+        if (!this[i].cacheEvent) {
+
+            this[i].cacheEvent = {};
+        }
+
+        if (!this[i].cacheEvent[type]) {
+
+            this[i].cacheEvent[type] = [handle];
+
+        } else {
+
+            this[i].cacheEvent[type].push(handle);
+        }
+    }
+};
+
+
+//-------------------------------------------------------------------------------------------------------------------//
+
+
+jQuery.prototype.myTrigger = function (type) {
+
+    let params = arguments.length > 1 ? [].slice.call(arguments, 1) : [],
+        self = this;
+
+    for (let i = 0; i < this.length; i++) {
+
+        if (this[i].cacheEvent[type]) {
+
+            this[i].cacheEvent[type].forEach(function (value, index) {
+
+                value.apply(self, params);
+            });
+        }
+    }
+}
+
+
+//-------------------------------------------------------------------------------------------------------------------//
+
+
+jQuery.prototype.myQueue = function (type, handle) {
+
+    let queueObj = this,
+        queueName = arguments[0] || 'fx',               // 'fx' 使系统内部的 队列
+        addFn = arguments[1] || null,
+        len = arguments.length;
+
+    // get queue
+
+    if (len == 1) {
+
+        return queueObj[0][queueName];
+    }
+
+    // create or add fn in queue
+
+    queueObj[0][queueName] == undefined ? queueObj[0][queueName] = [addFn] : queueObj[0][queueName].push(addFn);
+
+    return this;
+
+};
+
+
+//-------------------------------------------------------------------------------------------------------------------//
+
+
+jQuery.prototype.myDequeue = function (type) {
+
+    let queueName = arguments[0] || 'fx',
+        queueArr = this.myQueue(queueName),
+        currFn = queueArr.shift(),
+        self = this,
+        next;
+
+    if (currFn == undefined) {
+
+        return;
+    }
+
+    next = function () {
+
+        self.myQueue(queueName);
+
+    };
+
+    currFn(next);
+
+    return this;
+};
+
+
+//-------------------------------------------------------------------------------------------------------------------//
+
+
+jQuery.prototype.myAnimate = function (prop, callback) {
+
+    let len = this.length,
+        self = this,
+        baseFn;
+
+    baseFn = function () {
+
+        let times = 0;
+
+        for (let i = 0; i < len; i++) {
+
+            starttMove(self[i], prop, function (next) {
+
+                times++;
+
+                if (times == len) {
+
+                    callback && callback();
+
+                    next();
+                }
+
+            });
+        }
+    };
+
+    this.myQueue('fx', baseFn);
+
+    if (this.myQueue.length == 1) {
+
+        this.myDequeue('fx');
+    }
+};
+
+
+//-------------------------------------------------------------------------------------------------------------------//
+
+
+jQuery.prototype.myDelay = function (duration) {
+
+    let queueArr = this[0]['fx'];
+
+    queueArr.push(function (next) {
+
+        setTimeout(function () {
+
+            next();
+
+        }, duration);
+    });
+};
+
+
+
+
+
+
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

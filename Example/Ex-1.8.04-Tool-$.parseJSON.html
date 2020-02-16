@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * $.parseJSON(text: string, revievse); == JSON.parse();
+     *
+     * 严格 json 字符串转换为 对象
+     *
+     * JSON 数组 key value 必须都用 双引号
+     *
+     * jQuery 中没有把 字符串改变为 json 的方法
+     */
+
+
+    var json = '{"a": 123, "b": "str", "c": true}';
+
+    console.log($.parseJSON(json));
+
+
+</script>
+
+
+</body>
+</html>

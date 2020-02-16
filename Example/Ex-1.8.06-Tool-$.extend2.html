@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     *
+     * clone
+     *
+     * $.extend = $.fx.extend = function (){};
+     *
+     */
+
+    let obj1 = {
+        name: 'alpha',
+        age: 18,
+        friend: {
+            name: 'jack',
+            age: 16,
+        }
+    };
+
+    let obj2 = {
+        name: 'beta',
+        age: 30,
+        smoking: true,
+        friend: {
+            name: 'Monica',
+            age: 20,
+            sex: 'female'
+        }
+    };
+
+    let obj3 = {
+
+        name: 'omega',
+        age: 50,
+        wealth: 1000000
+    };
+
+
+    /**
+     * 浅克隆( shallow clone )
+     *
+     *
+     * 有则覆盖，无则添加
+     */
+
+    console.log($.extend(obj1, obj2));              // shallow clone
+
+
+    /**
+     * 深克隆( deep clone )
+     *
+     *
+     */
+
+    console.log($.extend(true, obj1, obj2, obj3));              // shallow clone
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<ul>
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+    <li>e</li>
+</ul>
+
+
+<p>
+    <span>1</span>
+    <i>2</i>
+    <span>3</span>
+    <i>4</i>
+    <span>5</span>
+    <i>6</i>
+</p>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    $('ul').on('click', function (e) {
+
+        console.log($(e.target).index());
+
+    });
+
+
+    console.log($('p span').index($('p span').eq(1)));              // 1
+
+    $('p').children().on('click', function (e) {
+
+        console.log($('p span').index($(e.target)));
+    });
+
+
+</script>
+
+
+</body>
+</html>

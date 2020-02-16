@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    var obj = {
+
+        0: "a",
+        1: "b",
+        2: "c",
+        length: 3
+
+    };
+
+    // var obj2 = {
+    //
+    //     0: "a",
+    //     1: "b",
+    //     2: "c",
+    //     length: 3,
+    //     slice : Array.prototype.slice               // 直接调用就可以改变为数组
+    // };
+
+
+    /**
+     * $.makeArray(obj, results);
+     *
+     * 把 类数组 转变为 数组
+     */
+
+    console.log($.makeArray(obj));                  // Array(3)
+
+    var arr = [1, 2, 3, 4];
+
+
+    /**
+     *
+     * 把第一位参数，跟第二个参数拼接在一起
+     *
+     * 如果第二个参数是 类数组，则返回类数组
+     *
+     * 如何第二个参数是 数组，则返回数组
+     */
+
+    console.log($.makeArray('d', obj));             // {0: "a", 1: "b", 2: "c", 3: "d", length: 4}
+
+
+</script>
+
+
+</body>
+</html>

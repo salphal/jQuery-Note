@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * $.ajax(url: string, type: string, data: object, success: fn,
+     *
+     *          error: fn, complete: fn, context: fn, timeout,
+     *
+     *          async( 异步 true ): boolean，dataType ...): data;
+     *
+     */
+
+    // $.ajax({
+
+    // url: '',                                 // 请求地址
+    // type: 'GET',                             // 请求方式
+
+    // async: true                              // 异步执行( true )
+    // async: false                             // 异步执行( 阻塞后续任务 )
+    // dataType: 'jsonp'
+
+    // data: {                                  // 登陆信息
+    //     name: 'admin',
+    //     password: 123456
+    // },
+
+    // error: function () {                     // 错误
+    //
+    // },
+
+    // complete: function () {                  // 完成后可对数据操作
+    //
+    // },
+
+    // context: $('.wrapper'),                  // 修改 this 指向
+
+    // success: function (res) {                // 请求成功后执行，必传参数
+    //
+    //     console.log(res);                    // 返回的数据
+    // }
+
+    // });
+
+
+    function result(res) {t
+
+        console.log(res);
+    }
+
+
+    $.ajax({
+        url: 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su',
+        type: 'GET',
+        data: {
+            wd: 'nba',
+            cb: 'result'
+        },
+        dataType: 'jsonp',
+    });
+
+
+    // {q: "nba", p: false, s: Array(10)}
+    // q: "nba"
+    // p: false
+    // s: (10) ["nba全明星周末", "nba直播吧", "nba排名", "nba录像高清回放像", "nba直播", "nba赛程", "nba直播视频在线直播", "Nba", "nba中文网", "nba新浪"]
+    // __proto__: Object
+
+
+
+</script>
+
+
+</body>
+</html>

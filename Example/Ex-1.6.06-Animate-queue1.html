@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        .demo {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: orange;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+
+<div class="demo"></div>
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * jQuery Animate Queue
+     *
+     * queue dequeue clearQueue
+     */
+
+    // queue(type, content)
+    // {chain, [function, function, function]}
+
+    $('.demo').queue('chain', function (next) {         // 添加 next 参数
+
+        console.log('over1');
+
+        next();                                         // 自动队列中执行下个函数
+
+    }).queue('chain', function () {
+
+        console.log('over2');
+
+    }).queue('chain', function () {
+
+        console.log('over3');
+    });
+
+
+    console.log($('.demo').queue('chain'));             // Array(3)
+
+
+    /**
+     * dequeue(type);
+     *
+     */
+
+    $('.demo').dequeue('chain');                        // over1
+
+    console.log($('.demo').queue('chain'));             // Array(2)
+
+    $('.demo').dequeue('chain');                        // over2
+
+    console.log($('.demo').queue('chain'));             // Array(1)
+
+    $('.demo').dequeue('chain');                        // over3
+
+    console.log($('.demo').queue('chain'));             // []
+
+
+</script>
+
+
+
+</body>
+</html>

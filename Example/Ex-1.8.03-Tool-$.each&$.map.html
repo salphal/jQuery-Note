@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * $.each(obj, callback);
+     *
+     * 处理数组 & 类数组，对象
+     */
+
+
+    var arr = [1, 2, 3, 4];
+
+
+    $.each(arr, function (index, ele) {
+
+        console.log(ele);
+    });
+
+
+    /**
+     * $.map(elems, callback, arg);
+     *
+     */
+
+    $.map(arr, function (index, ele) {
+
+        console.log((ele * index));
+    });
+
+
+</script>
+
+
+
+</body>
+</html>

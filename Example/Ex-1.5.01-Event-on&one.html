@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        .demo {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+
+        .demo2 li {
+
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<h2>on(types: string, selector?: string; data?: object; fn: function);</h2>
+
+<div class="demo demo1">demo1</div>
+
+<ul class="demo demo2">demo2
+    <li>li1</li>
+    <li>li2</li>
+    <li>li3</li>
+</ul>
+
+<ul class="demo demo3" target="_blank">demo3
+    <li>li1</li>
+    <li>li2</li>
+    <li>li3</li>
+</ul>
+
+<ul class="demo demo4" target="_blank">demo4
+
+</ul>
+
+
+<h2>one</h2>
+
+
+<a href="https://wwww.baidu.com">jump</a>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * on(types, fn);
+     *
+     * on(types, selector | data, fn)
+     *
+     * on(types: string | {}, selector?: string; data?: object; fn: function);
+     *
+     * fatherDom.on(types, sonDom, data, fn); => sonDom 事件委托 fatherDom
+     *
+     * 可以绑定系统事件/自定义事件
+     */
+
+
+    // on(types, fn);
+
+    $('.demo1').on('click', function () {
+
+        alert(0);
+    });
+
+    // on(types, fn);
+
+    $('.demo1').on('mouseenter', function () {
+
+        alert(1);
+
+    });
+
+    // on(types, selector | data, fn)
+
+    $('.demo2').on('click', {name: 'alpha', age: 18}, function (e) {
+
+        console.log(e.data.name);
+
+    });
+
+    // on(types: string, selector?: string; data?: object; fn: function);
+
+    $('.demo3').on('click', 'li', {name: 'alpha', age: 18}, function (e) {
+
+        alert($(e.target).text());
+
+    });
+
+
+    // on(type);
+
+    $('.demo4').on({
+        click: function () {
+
+            console.log('click');
+        },
+        mouseenter: function () {
+
+            console.log('mouseenter');
+        },
+        mouseleave: function () {
+
+            console.log('mouseleave');
+        }
+    });
+
+
+    /**
+     * one(types: string, selector?: string; data?: object; fn: function);
+     *
+     * 只能执行一次
+     */
+
+
+    $('a').one('click', function (e) {
+
+        window.open('http://wwww.taobao.com');
+
+        return false;
+    });
+
+
+</script>
+
+
+</body>
+</html>

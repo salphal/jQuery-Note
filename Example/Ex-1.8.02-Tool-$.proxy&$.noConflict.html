@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+
+        #demo{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<div id="demo">123</div>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * $.proxy(fn, content): newFn;
+     *
+     * 改变 this 指向，类似 bind();
+     *
+     * 不会改变原函数 this 的指向，会返回一个包含有 this 新指向的函数
+     */
+
+
+    function show() {
+
+        console.log(this);
+    }
+
+
+    var obj = {
+        name: 'alpha',
+        age: 18
+    };
+
+    var showProxy = $.proxy(show, obj);
+
+    show();                     // window
+
+    showProxy();                // {name: 'alpha', age: 18}
+
+
+    var list = {
+
+        init: function () {
+
+            this.ms = 123;
+            this.dom = document.getElementById('demo');
+            this.bindEvent();
+        },
+
+        bindEvent: function () {
+
+            // this.dom.onclick = this.show;
+            this.dom.onclick = $.proxy(this.show, this);
+        },
+
+        show: function () {
+
+            console.log(this.produseMs(this.ms));
+        },
+
+        produseMs: function (ms) {
+
+            return ms + 234;
+        }
+    };
+
+
+    list.init();
+
+
+    /**
+     * noConflict();
+     *
+     * 防止 '$' 变量命名冲突
+     */
+
+    $new = $.noConflict();
+
+    $new('#demo').text('hello world');
+
+
+</script>
+
+
+</body>
+</html>

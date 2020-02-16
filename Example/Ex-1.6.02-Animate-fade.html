@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+
+        .demo {
+            padding: 2px 16px;
+            width: 180px;
+            border: 1px solid black;
+        }
+
+        .demo p {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            text-indent: 1em;
+            background-color: #d0d0d0;
+        }
+
+        ul{
+            display: none;
+        }
+
+        .demo ul li {
+            padding: 8px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid black;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="demo">
+    <p>Rose</p>
+    <ul>
+        <li>NBA状元秀</li>
+        <li>最年轻的MVP</li>
+        <li>霓虹重生</li>
+    </ul>
+</div>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+    /**
+     * fadeIn();         淡入 opacity(0 -> 1)
+     * fadeOut();        淡出 opacity(1 -> 0)
+     * fadaTo();         渐进到 opacity(target{0, 1})
+     * fadeToggle();     渐进切换
+     *
+     * ()
+     */
+
+
+    $('p').on('click', function () {
+
+        if ($(this).next().css('display') == 'none') {
+
+            $(this).next().fadeTo(500, 0.8, 'swing', function () {
+
+                console.log('over1');
+            });
+
+        } else {
+
+            $(this).next().fadeTo(500, 0.2, 'swing', function () {
+
+                console.log('over2');
+            })
+        }
+
+        // $(this).next().fadeToggle(200);
+
+    });
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

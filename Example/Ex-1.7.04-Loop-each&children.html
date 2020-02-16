@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<p>
+    <span></span>
+    <i></i>
+    <span></span>
+    <i></i>
+    <span></span>
+    <i></i>
+</p>
+
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+    // $('li').text(function () {
+    //
+    //
+    // }).addClass(function () {
+    //
+    //
+    // });
+
+    $('li').each(function (index, ele) {
+
+        $(ele)
+            .text(index)
+            .addClass('demo' + index);
+    });
+
+
+    /**
+     * chidlren();
+     *
+     * 获取所有子元素
+     * 更加灵活
+     */
+
+    $('p').children().each(function (index, ele) {
+
+        if (ele.nodeName == "I") {
+
+            $(ele).text('i - ' + index);
+
+        } else {
+
+            $(ele).text('span - ' + index);
+        }
+    });
+
+
+</script>
+
+
+</body>
+</html>

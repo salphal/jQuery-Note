@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+
+        .demo {
+            padding: 2px 16px;
+            width: 180px;
+            border: 1px solid black;
+        }
+
+        .demo p {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            text-indent: 1em;
+            background-color: #d0d0d0;
+        }
+
+        ul{
+            display: none;
+        }
+
+        .demo ul li {
+            padding: 8px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid black;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="demo">
+    <p>Rose</p>
+    <ul>
+        <li>NBA状元秀</li>
+        <li>最年轻的MVP</li>
+        <li>霓虹重生</li>
+    </ul>
+</div>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * show(speed: number, easing[wswing, linear]: string，callback);
+     *
+     * 还原最后一次 设置 或 默认的 display 状态
+     */
+
+    $('.demo').on('mouseenter','p', function () {
+
+        $(this).next().show(3000);
+
+    });
+
+    $('.demo').on('mouseleave','p', function () {
+
+        $(this).next().hide(2000);
+
+    });
+
+
+    /**
+     * toggle()
+     *
+     *
+     */
+
+    $('p').on('click', function () {
+
+        // if ($(this).next().css('display') == 'none') {
+        //
+        //     $(this).next().show();
+        //
+        // } else {
+        //
+        //     $(this).next().hide();
+        // }
+
+        // $(this).next().toggle();
+    });
+
+
+
+</script>
+
+
+</body>
+</html>

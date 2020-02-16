@@ -1,0 +1,169 @@
+/* box size is calculated by border */
+* {
+    box-sizing: border-box;
+}
+
+
+i, /* defined text-icon */
+em, /* defined */
+span { /* defined text */
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+/* defined global font-styles start */
+body {
+    font: normal 12px/1.5 "\5B8B\4F53", Arial, Helvetica, sans-serif;
+}
+
+
+button,
+input,
+select,
+textarea {
+    background-color: #fff;
+    font: normal 12px/1.5 "\5B8B\4F53", Arial, Helvetica, sans-serif;
+}
+
+/* defined global font-styles end */
+
+
+body,
+ul, ol, li, dl, dd, dt, /* list elements */
+h1, h2, h3, h4, h5, h6, /* heading elements */
+table, th, tr, td, /* table elements */
+form, input, select, button, fieldset, legend, textarea, /* form & textarea elements */
+p, blockquote, pre {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* in order inherit font attribute */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+
+address,
+cite,
+dfn,
+var {
+    font-style: normal;
+}
+
+
+/* uniform word width */
+code,
+kbd,
+pre,
+samp {
+    font-family: Courier new, courier, monospace;
+}
+
+
+/* normalize small */
+small {
+    font-size: 12px;
+}
+
+
+ul, /* defined nav symbols */
+ol {
+    list-style: none;
+}
+
+
+/* Remove the impact on row height */
+sup {
+    vertical-align: text-top;
+}
+
+
+sub {
+    vertical-align: text-bottom;
+}
+
+
+img {
+    border: 0; /* clear image border style */
+    vertical-align: middle; /* solve up and down 3 px spacing */
+}
+
+
+table {
+    border-collapse: collapse; /* border merge */
+    border-spacing: 0; /* clear border spacing */
+}
+
+th {
+    font-weight: normal; /* clear font weight about table head text */
+}
+
+
+/* form elements start */
+input {
+    outline: none;
+    border: none;
+}
+
+
+button {
+    cursor: pointer;
+    border-radius: 0;
+}
+
+
+textarea {
+    resize: none; /* prevent mouse dragging textarea */
+    overflow: auto; /* hide scroll bar */
+}
+
+/* form elements end */
+
+
+/*clear link text underline*/
+a {
+    text-decoration: none;
+}
+
+
+/*clear floating flow*/
+.clearFix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+
+a,
+button,
+input[type = button] {
+    padding: 12px 24px;
+    border: 1px solid #eee;
+}
+
+a:visited,
+button:visited,
+input[type = button]:visited {
+    background-color: #404060;
+}
+
+a:hover,
+button:hover,
+input[type = button]:hover {
+    color: #FFFFFF;
+    background-color: #666666;
+}
+
+a:active,
+button:active,
+input[type = button]:active {
+    background-color: #999999;
+}
+
+
+

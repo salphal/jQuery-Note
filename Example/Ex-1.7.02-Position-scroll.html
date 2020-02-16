@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+
+        body {
+            width: 3000px;
+            height: 3000px
+        }
+
+        .father {
+            overflow: auto;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+            border: 4px solid black;
+        }
+
+        .demo {
+            width: 3000px;
+            height: 3000px;
+            background-color: #1c94c4;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+
+<div class="father">
+    <div class="demo"></div>
+</div>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * target.scrollTop();          // 可以获取任何元素的滚动距离
+     *
+     * $(window).scrollTop();
+     *
+     * 返回滚动条滚动距离
+     */
+
+    console.log($(window).scrollTop());
+
+    console.log($('.demo').scrollLeft());
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * typeof();                // Undefined, String, Number, Boolean, Object, Function
+     *
+     * 里面的数据是什么类型
+     */
+
+    /**
+     * $.type();
+     *
+     * 里面的数据是什么
+     */
+
+    console.log($.type(undefined));                 // undefined
+    console.log($.type('str'));                     // string
+    console.log($.type(123));                       // number
+    console.log($.type(true));                      // boolean
+    console.log($.type(function () {}));            // function
+    console.log($.type(null));                      // null
+    console.log(typeof null);                       // object
+    console.log($.type({}));                        // object
+    console.log($.type([1, 2, 3, 4,]));             // array
+    console.log($.type(new Date()));                // data
+    console.log($.type(new Number()));              // number
+
+
+    function Person() {}
+
+    console.log($.type(new Person()));              // object
+
+
+    /**
+     * $.isArray();
+     * $.isFunction();
+     * $.isWindow();
+     *
+     */
+
+    console.log($.isArray([1, 2, 3, 4]));           // true
+
+    console.log($.isFunction(function () {}));      // true
+
+    console.log($.isWindow(window));                // true
+
+
+    /**
+     * $.trim(): string:
+     *
+     * 和原生 trim 效果无差，区别于可以传递多个参数
+     */
+
+
+    var str = '    1213 43  31   43 3     ';
+
+
+    console.log($.trim(str));                       // 1213 43  31   43 3
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+
+        #demo {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<div id="demo"></div>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * $.extend();          // Tools Methods
+     *
+     * invoking: $.extend();
+     *
+     *
+     * $.fn.extend();       // Function Methods
+     *
+     * invoking: $(dom).fn();
+     *
+     *
+     * 1. 扩展方法
+     * 2. 浅层克隆
+     * 3. 深层克隆
+     *
+     *
+     */
+
+
+    $.extend({
+
+        definedRandom: function (start, final) {
+
+            let len = final - start;
+
+            return Math.random() * len + start;
+        }
+    });
+
+
+    console.log($.definedRandom(10, 20));
+
+
+    $.fn.extend({
+
+        drag: function () {
+
+            let disX,
+                disY,
+                self = this;
+
+            $(this).on('mousedown', function (e) {
+
+                disX = e.pageX - $(this).offset().left;
+
+                disY = e.pageY - $(this).offset().top;
+
+                $(document).on('mousemove', function (e) {
+
+                    $(self).css({left: e.pageX - disX, top: e.pageY - disY});
+                });
+
+                $(document).on('mouseup', function (e) {
+
+                    $(document).off('mousemove').off('mouseup');
+                })
+            });
+
+            return this;
+        }
+    });
+
+
+    $('#demo').drag();
+
+
+</script>
+
+
+</body>
+</html>

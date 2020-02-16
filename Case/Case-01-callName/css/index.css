@@ -1,0 +1,76 @@
+.wrapper {
+    margin: 100px auto 0;
+    padding: 12px 14px;
+    width: 320px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.wrapper .header {
+    height: 30px;
+    line-height: 30px;
+}
+
+.wrapper .header .hot {
+    float: left;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wrapper .header .change {
+    float: right;
+    color: #666;
+}
+
+.wrapper .contain {
+    margin: 8px 0 16px 0;
+}
+
+.wrapper .contain .tpl {
+    display: none;
+}
+
+.wrapper .contain li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.wrapper .contain .number {
+    display: inline-block;
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: #666666;
+    color: #fff;
+    text-align: center;
+}
+
+.wrapper .contain .title {
+    font-size: 14px;
+}
+
+
+.wrapper .contain .mes {
+    float: right;
+}
+
+.wrapper .contain .mes:after {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+    background-size: 100% 100%;
+}
+
+.wrapper .contain .mes.up:after {
+    background-image: url("../img/up.svg");
+    /*background-position-y: 4px;*/
+}
+
+.wrapper .contain .mes.down:after {
+    background-image: url("../img/down.svg");
+    /*background-position-y: 6px;*/
+}
+
+

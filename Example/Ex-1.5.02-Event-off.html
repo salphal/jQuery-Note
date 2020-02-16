@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        .demo {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: orange;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+
+<ul class="demo demo1">demo1
+    <li>li1</li>
+    <li>li2</li>
+    <li>li3</li>
+</ul>
+
+
+
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    function clickOne() {
+
+        console.log('click one');
+    }
+
+    function clickTwo() {
+
+        console.log('click two');
+    }
+
+
+    function clickThree() {
+
+        console.log('click Three');
+    }
+
+    $('.demo1').on('click', clickOne);
+    $('.demo1').on('click', clickTwo);
+
+
+    function enterOne() {
+
+        console.log('enterOne');
+    }
+    function enterTow() {
+
+        console.log('enterTow');
+    }
+
+    $('.demo1').on('mouseenter', enterOne);
+    $('.demo1').on('mouseenter', enterTow);
+
+
+    /**
+     * off(types: string, selector?: string, fn);
+     *
+     * selector: 绑定时是什么样，解绑就应该是什么，否则解除失败
+     */
+
+    // off();                   // 解除所有绑定事件
+
+    // $('.demo1').off();
+
+
+    // off(types, fn);          // 根据指定事件解绑指定事件处理函数
+
+    // $('.demo1').off('click', clickOne);
+
+
+    // off(types, selector, fn);            // 根据指定事件解绑指定事件委托的处理函数
+
+
+    $('.demo').on('click', 'li', clickThree);
+
+    $('.demo').off('click','li',clickThree);
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
