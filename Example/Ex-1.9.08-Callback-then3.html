@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    function createScore() {
+
+        let df = $.Deferred();
+
+        setInterval(function () {
+
+            let score = Math.random() * 100;
+
+            if (score > 60) {
+
+                df.resolve('congratulation');
+
+            } else if (score < 50) {
+
+                df.reject('get out');
+
+            } else {
+
+                df.notify('go on');
+            }
+
+        }, 1000);
+
+        // 只返回部分功能
+        return df.promise();                // done fail progress
+    }
+
+    let df = createScore();
+
+
+    df.then(function (ms) {
+
+        console.log('Ho Yeah!' + ms);
+
+        let innerDf = $.Deferred();
+
+        setTimeout(function () {
+
+            innerDf.resolve('df1 resolve');
+
+        }, 1000);
+
+        return innerDf.promise();
+
+    }, function (ms) {
+
+        console.log('Ho NO!' + ms);
+
+        let innerDf = $.Deferred();
+
+        setTimeout(function () {
+
+            innerDf.reject('df1 reject');
+
+        }, 1000);
+
+        return innerDf.promise();
+
+    }, function (ms) {
+
+        console.log('Go On!' + ms);
+
+        let innerDf = $.Deferred();
+
+        setTimeout(function () {
+
+            innerDf.notify('df1 notify');
+
+        }, 1000);
+
+        return innerDf.promise();
+
+    }).then(function (ms) {
+
+        console.log(ms);
+
+    },function (ms) {
+
+        console.log(ms);
+
+    },function (ms) {
+
+        console.log(ms);
+
+    });
+
+
+    // $.ajax({
+    //     url,
+    //     type,
+    //     data
+    // }).then(function () {               // 数据成功回调才执行，返回 ajax 可继续判断调用
+    //
+    //         return $.ajax();
+    //
+    //     }).then(function () {
+    //
+    //
+    // });
+
+
+</script>
+
+
+
+</body>
+</html>

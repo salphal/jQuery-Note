@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+
+    function createScore() {
+
+        let df = $.Deferred();
+
+        setInterval(function () {
+
+            let score = Math.random() * 100;
+
+            if (score > 60) {
+
+                df.resolve('congratulation');
+
+            } else if (score < 50) {
+
+                df.reject('get out');
+
+            } else {
+
+                df.notify('go on');
+            }
+
+        }, 1000);
+
+        // 只返回部分功能
+        return df.promise();                // done fail progress
+    }
+
+    let df = createScore();
+
+
+    /**
+     * 重复调用 then
+     *
+     * 第一次执行函数的返回值，会被用于第二次 then 中相应状态的参数
+     *
+     */
+
+    df.then(function (ms) {
+
+        console.log('Ho Yeah!' + ms);
+
+        return 'done1';
+
+    }, function (ms) {
+
+        console.log('Ho NO!' + ms);
+
+        return 'fail1';
+
+    }, function (ms) {
+
+        console.log('Go On!' + ms);
+
+        return 'progress1';
+
+    }).then(function (param) {
+
+        console.log('Ho Yeah!' + param);
+
+        // return 'done1';
+
+    }, function (param) {
+
+        console.log('Ho NO!' + param);
+
+        // return 'fail1';
+
+    }, function (param) {
+
+        console.log('Go On!' + param);
+
+        // return 'progress1';
+    });
+
+
+</script>
+
+
+</body>
+</html>

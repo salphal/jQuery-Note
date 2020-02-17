@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="../myJQuery.js"></script>
+</head>
+<body>
+
+
+<script>
+
+
+    // /**
+    //  * fire
+    //  *
+    //  */
+    //
+    // let cb = $.myCallbacks();
+    //
+    // function a(ms) {
+    //
+    //     console.log('a', ms);
+    // }
+    //
+    // function b(ms) {
+    //
+    //     console.log('b', ms);
+    // }
+    //
+    // cb.add(a);
+    // cb.add(b);
+    //
+    // cb.fire('null');
+    // cb.fire('null');
+
+
+    // /**
+    //  * once
+    //  *
+    //  */
+    //
+    // let cbOnce = $.myCallbacks('once');
+    //
+    // function a(ms) {
+    //
+    //     console.log('a', ms);
+    // }
+    //
+    // function b(ms) {
+    //
+    //     console.log('b', ms);
+    // }
+    //
+    // cbOnce.add(a);
+    // cbOnce.add(b);
+    // cbOnce.fire('once');
+    // cbOnce.fire('once');
+
+
+    // /**
+    //  * memory
+    //  *
+    //  */
+    //
+    // let cbMemory = $.myCallbacks('memory');
+    //
+    // function a(ms) {
+    //
+    //     console.log('a', ms);
+    // }
+    //
+    // function b(ms) {
+    //
+    //     console.log('b', ms);
+    // }
+    //
+    // function c() {
+    //
+    //     console.log('c');
+    // }
+    //
+    // cbMemory.add(a);
+    // cbMemory.add(b);
+    // cbMemory.fire('memory');
+    // cbMemory.add(c);
+    // cbMemory.fire('memory');
+
+
+    /**
+     * onceMemory
+     *
+     *
+     */
+
+    let cbOnceMemory = $.myCallbacks('once memory');
+
+    function a(ms) {
+
+        console.log('a', ms);
+    }
+
+    function b(ms) {
+
+        console.log('b', ms);
+    }
+
+    function c() {
+
+        console.log('c');
+    }
+
+    cbOnceMemory.add(a);
+    cbOnceMemory.add(b);
+    cbOnceMemory.fire('OnceMemory');
+    cbOnceMemory.add(c);
+    cbOnceMemory.fire('OnceMemory');
+
+
+</script>
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+
+</body>
+</html>

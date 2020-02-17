@@ -396,10 +396,180 @@ jQuery.prototype.myDelay = function (duration) {
 };
 
 
+//-------------------------------------------------------------------------------------------------------------------//
 
 
+jQuery.myCallbacks = function () {
+
+    // param{'once', 'memory', 'once memory', null}
+
+    let args = [],                              // 全局实际参数列表
+        options = arguments[0] || '',           // 存储参数
+        list = [],                              // add 方法队列
+        fireIndex = 0,                          // 记录当前执行要函数的索引
+        fired = false,                          // 记录是否有被 fired 过
+        fire;
 
 
+    fire = function () {
 
+        for (; fireIndex < list.length; fireIndex++) {
+
+            list[fireIndex].apply(window, args);
+        }
+
+        if (options.indexOf('once') != -1) {
+
+            list = [];
+
+            fireIndex = 0;
+        }
+    };
+
+    return {
+
+        add: function (fn) {
+
+            list.push(fn);
+
+            if (options.indexOf('memory') != -1 && fired) {
+
+                fire();
+            }
+
+            return this;
+        },
+
+        fire: function () {
+
+            fireIndex = 0;
+
+            fired = true;
+
+            args = arguments;
+
+            fire();
+        }
+    }
+};
+
+
+//-------------------------------------------------------------------------------------------------------------------//
+
+
+jQuery.myDeferred = function () {
+
+    /**
+     * callbacls {
+     *
+     *     done     => resolve();
+     *     fail     => reject();
+     *     progress => notify();
+     * }
+     */
+
+    let deferred = {},
+        pedding = true,
+        args,
+        arrCallbacks = [
+
+            [
+                jQuery.myCallbacks('once memory'), 'done', 'resolve'
+            ],
+            [
+                jQuery.myCallbacks('once memory'), 'fail', 'reject'
+            ],
+            [
+                jQuery.myCallbacks('memory'), 'progress', 'notify'
+            ]
+        ];
+
+    for (let i = 0; i < arrCallbacks.length; i++) {
+
+        // deferred['done'] = function () {}
+        // deferred['fail'] = function () {}
+        // deferred['progress'] = function () {}
+
+        deferred[arrCallbacks[i][1]] = (function (index) {
+
+            return function (fn) {
+
+                arrCallbacks[index][0].add(fn);
+            }
+
+        }(i));
+
+        deferred[arrCallbacks[i][2]] = (function (index) {
+
+            return function () {
+
+                args = arguments;
+
+                if (pedding) {
+
+                    arrCallbacks[index][0].fire.apply(window, args);
+
+                    arrCallbacks[index][2] == 'resolve' || arrCallbacks[index][2] == 'reject' ? pedding = false : '';
+                }
+            }
+
+        }(i));
+    }
+
+    return deferred;
+};
+
+
+// jQuery.myDeferred = function () {
+//     // callback
+//     // 3个callback
+//     // done resolve    fail reject     progress notify
+//     var arr = [
+//         [
+//             jQuery.myCallbacks('once memory'), 'done', 'resolve'
+//         ],[
+//             jQuery.myCallbacks('once memory'), 'fail', 'reject'
+//         ],[
+//             jQuery.myCallbacks('memory'), 'progress', 'notify'
+//         ]
+//     ];
+//
+//     var pendding = true;
+//
+//     var deferred = {};
+//
+//     for (var i = 0; i < arr.length; i++) {
+//         // arr[0][1]
+//
+//         // 注册
+//         // deferred['done'] = function () {}
+//         // deferred['fail'] = function () {}
+//         // deferred['progress'] = function () {}
+//         deferred[ arr[i][1] ] = (function (index) {
+//             return function (func) {
+//                 arr[index][0].add(func)
+//             }
+//         })(i);
+//
+//         // 触发
+//         // deferred['resolve'] = function () {}
+//         // deferred['reject'] = function () {}
+//         // deferred['notify'] = function () {}
+//
+//         deferred[ arr[i][2] ] =  (function (index) {
+//             return function () {
+//                 var args = arguments;
+//                 if (pendding) {
+//                     arr[index][0].fire.apply(window, args);
+//                     arr[index][2] == 'resolve' || arr[index][2] == 'reject' ? pendding = false : '';
+//                 }
+//
+//             }
+//         })(i);
+//     }
+//
+//
+//     return deferred;
+// }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

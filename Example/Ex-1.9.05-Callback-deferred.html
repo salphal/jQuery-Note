@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * $.Deferred(); <= $.ajax(); 内部实现原理
+     *
+     * status:
+     *
+     *      done => resolve
+     *      fail => reject,
+     *      progress => notify
+     *
+     */
+
+    // let df = $.Deferred();
+
+    // 异步案例
+
+    function createScore() {
+
+        let df = $.Deferred();
+
+        setInterval(function () {
+
+            let score = Math.random() * 100;
+
+            if (score > 60) {
+
+                df.resolve('congratulation');
+
+            } else if (score < 50) {
+
+                df.reject('get out');
+
+            } else {
+
+                df.notify('go on');
+            }
+
+        }, 1000);
+
+        // 只返回部分功能
+        return df.promise();                // done fail progress
+    }
+
+    let df = createScore();
+
+
+    // 注册成功的回掉函数
+
+    df.done(function (ms) {
+
+        console.log('registration success' + ' ' + ms);
+    });
+
+    // 注册失败的回掉函数
+
+    df.fail(function (ms) {
+
+        console.log('registration failed' + ' ' + ms);
+    });
+
+    // 注册中的回掉函数
+
+    df.progress(function (ms) {
+
+        console.log('Registering' + ' ' + ms)
+    });
+
+
+</script>
+
+
+</body>
+</html>

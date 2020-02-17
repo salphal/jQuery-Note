@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+
+    /**
+     * when(df1, df2, df3 ...);
+     *
+     * 参数可以是一个或多个延迟对象
+     *
+     * 返回值是 promise
+     */
+
+
+    $.when(createScore1(), createScore2(), createScore3())
+
+        .then(function () {             //  createScore1(), createScore2(), createScore3() 都执行成功
+
+            console.log('succeed');
+
+        }, function () {                // createScore1(), createScore2(), createScore3() 其中有一个执行失败
+
+            console.log('fail')
+        });
+
+
+    function createScore1() {
+
+        let df = $.Deferred();
+
+        setInterval(function () {
+
+            let score = Math.random() * 100;
+
+            if (score > 40) {
+
+                df.resolve('congratulation');
+
+            } else if (score < 50) {
+
+                df.reject('get out');
+
+            } else {
+
+                df.notify('go on');
+            }
+
+        }, 1000);
+
+        // 只返回部分功能
+        return df;
+    }
+
+    function createScore2() {
+
+        let df = $.Deferred();
+
+        setInterval(function () {
+
+            let score = Math.random() * 100;
+
+            if (score > 60) {
+
+                df.resolve('congratulation');
+
+            } else if (score < 50) {
+
+                df.reject('get out');
+
+            } else {
+
+                df.notify('go on');
+            }
+
+        }, 1000);
+
+        // 只返回部分功能
+        return df;
+    }
+
+    function createScore3() {
+
+        let df = $.Deferred();
+
+        setInterval(function () {
+
+            let score = Math.random() * 100;
+
+            if (score > 60) {
+
+                df.resolve('congratulation');
+
+            } else if (score < 50) {
+
+                df.reject('get out');
+
+            } else {
+
+                df.notify('go on');
+            }
+
+        }, 1000);
+
+        // 只返回部分功能
+        return df;
+    }
+
+
+</script>
+
+
+</body>
+</html>

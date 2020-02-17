@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script src="../jQuery%20version/jquery-2.2.4.js"></script>
+
+<script>
+
+    let df = $.Deferred();
+
+    // df.done(function () {
+    //
+    //     console.log('done');
+    //
+    // }).fail(function () {
+    //
+    //     console.log('fail');
+    //
+    // }).progress(function () {
+    //
+    //     console.log('progress');
+    //
+    // });
+
+    // 简化写法
+
+    /**
+     * df.then(doneFn, failFn, progressFn ...);
+     *
+     *
+     */
+
+    df.then(function () {           // done
+
+        console.log('done');
+
+    }, function () {                // fail
+
+        console.log('fail');
+
+    }, function () {                // progress
+
+        console.log('progress');
+
+    });
+
+
+    function createScore() {
+
+        let df = $.Deferred();
+
+        setInterval(function () {
+
+            let score = Math.random() * 100;
+
+            if (score > 60) {
+
+                df.resolve('congratulation');
+
+            } else if (score < 50) {
+
+                df.reject('get out');
+
+            } else {
+
+                df.notify('go on');
+            }
+
+        }, 1000);
+
+        // 只返回部分功能
+        // 只能注册，不能触发
+        return df.promise();                // done fail progress
+    }
+
+    createScore();
+
+
+</script>
+
+
+</body>
+</html>
