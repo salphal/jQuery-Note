@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../jq/fullpage/jquery.fullPage.css">
+
+</head>
+<body>
+
+
+<div class="wrapper">
+    <div class="section">
+        <h3>第一屏</h3>
+    </div>
+    <div class="section">
+        <h3>第二屏</h3>
+    </div>
+    <div class="section">
+        <div class="slide">
+            <h2>3-1</h2>
+        </div>
+        <div class="slide">
+            <h2>3-2</h2>
+        </div>
+        <div class="slide">
+            <h2>3-3</h2>
+        </div>
+    </div>
+    <div class="section">
+        <h3>第四屏</h3>
+    </div>
+</div>
+
+
+<script src="../jq/jquery-2.2.4.min.js"></script>
+<script src="../jq/fullpage/jquery.fullPage.js"></script>
+
+
+<script>
+
+
+    /**
+     * fullpage(options);
+     *
+     *
+     * afterLoad: 滚动到某一屏后的回调函数，接收 anchorLink 和 index 两个参数，
+     *            anchorLink 是锚链接的名称，index 是序号，从1开始计算
+     *
+     *
+     * onLeave: 滚动前的回调函数，接收 index、nextIndex 和 direction 3个参数：
+     *          index 是离开的“页面”的序号，从1开始计算；nextIndex 是滚动到的“页面”的序号，
+     *          从1开始计算；direction 判断往上滚动还是往下滚动，值是 up 或 down
+     *
+     *
+     */
+
+    $('.wrapper').fullpage({
+
+        afterLoad: function (anchor, index) {
+
+            console.log('load' + anchor + index);
+        },
+        onLeave: function (curIndex, nextIndex) {
+
+            console.log('leave' + curIndex + nextIndex);
+        }
+    });
+
+
+</script>
+
+
+</body>
+</html>
