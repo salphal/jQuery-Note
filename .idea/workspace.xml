@@ -2,92 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c663df75-bd24-444e-a0dd-79009fd716d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2.1.0-iQ-Fullpage.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2.2.1-jQ-Extend.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case/Case-03-Fullpage/entry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case/Case-03-Fullpage/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case/Case-03-Fullpage/pageEngine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case/Case-03-Fullpage/src/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case/Case-03-Fullpage/src/js/component/componentBase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Case/Case-03-Fullpage/src/js/tool/myFullPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Example/Ex-2.0.01-Fullpage-fullpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Example/Ex-2.0.02-Fullpage-fullpageStyle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Example/Ex-2.2.01-Extend.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jq/fullpage/jquery-1.8.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jq/fullpage/jquery.fullPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jq/fullpage/jquery.fullPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jq/fullpage/jquery.fullPage.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2.2.2-jQ-Prototype.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Example/Ex-2.2.02-jQuery-prototype.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.9.1-jQ-ajax.md" beforeDir="false" afterPath="$PROJECT_DIR$/1.9.1-jQ-Ajax.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/EX-1.2.08-Html-html&amp;text&amp;size.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/EX-1.2.08-Html-html&amp;text&amp;size.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.1.01.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.1.01-Introduction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.2.01-Selector-$.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.2.01-Selector-$.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.2.03-Selector-find.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.2.03-Selector-find.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.2.04-Selector-filter&amp;not.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.2.04-Selector-filter&amp;not.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.2.05-Selector-is&amp;has.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.2.05-Selector-is&amp;has.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.2.06-Selector-is.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.2.06-Selector-is.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.2.07-Selector-add&amp;end.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.2.07-Selector-add&amp;end.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.2.09-Css-Class.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.2.09-Css-Class.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.2.09-Demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.2.09-Demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.2.10-Form-val.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.2.10-Form-val.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.3.01-Dom-next&amp;prev.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.3.01-Dom-next&amp;prev.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.3.02-Dom-prevAll&amp;prevAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.3.02-Dom-prevAll&amp;prevAll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.3.03-Dom-prevUntil.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.3.03-Dom-prevUntil.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.3.04-Dom-nextAll&amp;nextUntil.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.3.04-Dom-nextAll&amp;nextUntil.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.3.05-Dom-siblings.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.3.05-Dom-siblings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.3.06-Dom-parent.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.3.06-Dom-parent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.3.07-Dom-closest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.3.07-Dom-closest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.3.08-Dom-offsetParent.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.3.08-Dom-offsetParent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.3.09-Dom-slice.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.3.09-Dom-slice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.3.10-Dom-before&amp;after&amp;append.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.3.10-Dom-before&amp;after&amp;append.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.3.11-Dom-remove$detach.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.3.11-Dom-remove$detach.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.4.01-Dom-wrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.4.01-Dom-wrap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.4.02-Dom-clone.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.4.02-Dom-clone.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.4.02-Dom-cloneDemo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.4.02-Dom-cloneDemo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.4.03-Dom-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.4.03-Dom-data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.5.01-Event-on&amp;one.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.5.01-Event-on&amp;one.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.5.02-Event-off.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.5.02-Event-off.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.5.03-Event-trigger.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.5.03-Event-trigger.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.5.04-Event-hover.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.5.04-Event-hover.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.6.01-Animate-show&amp;hide&amp;toggle.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.6.01-Animate-show&amp;hide&amp;toggle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.6.02-Animate-fade.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.6.02-Animate-fade.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.6.03-Animate-slide.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.6.03-Animate-slide.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.6.04-Animate.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.6.04-Animate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.6.05-Animate-plugin-easing.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.6.05-Animate-plugin-easing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.6.06-Animate-queue1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.6.06-Animate-queue1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.6.07-Animate-queue2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.6.07-Animate-queue2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.7.01-Position-offset&amp;position.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.7.01-Position-offset&amp;position.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.7.02-Position-scroll.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.7.02-Position-scroll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.7.03-Position-getSize.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.7.03-Position-getSize.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.7.04-Loop-each&amp;children.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.7.04-Loop-each&amp;children.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.7.05-Loop-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.7.05-Loop-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.8.01-Tool-$.type&amp;$.trim.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.8.01-Tool-$.type&amp;$.trim.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.8.02-Tool-$.proxy&amp;$.noConflict.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.8.02-Tool-$.proxy&amp;$.noConflict.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.8.03-Tool-$.each&amp;$.map.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.8.03-Tool-$.each&amp;$.map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.8.04-Tool-$.parseJSON.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.8.04-Tool-$.parseJSON.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.8.05-Tool-$.makeArray.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.8.05-Tool-$.makeArray.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.8.06-Tool-$.extend1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.8.06-Tool-$.extend1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.8.06-Tool-$.extend2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.8.06-Tool-$.extend2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.9.01-Ajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.9.01-Ajax.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.9.02-Callback-once.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.9.02-Callback-once.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.9.03-Callback-memory.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.9.03-Callback-memory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.9.04-Callback-stopOnFalse.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.9.04-Callback-stopOnFalse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.9.04-Callback-unique.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.9.04-Callback-unique.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.9.05-Callback-deferred.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.9.05-Callback-deferred.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.9.06-Callback-then1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.9.06-Callback-then1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.9.07-Callback-then2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.9.07-Callback-then2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.9.08-Callback-then3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.9.08-Callback-then3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.9.09-Callback-.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.9.09-Callback-.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.9.10-Callback-myDeferred.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.9.10-Callback-myDeferred.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Ex-1.9.11-Callback-when.html" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Ex-1.9.11-Callback-when.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery version/jquery-1.12.4.js" beforeDir="false" afterPath="$PROJECT_DIR$/jq/jquery-1.12.4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery version/jquery-1.12.4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/jq/jquery-1.12.4.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery version/jquery-2.2.4.js" beforeDir="false" afterPath="$PROJECT_DIR$/jq/jquery-2.2.4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery version/jquery-2.2.4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/jq/jquery-2.2.4.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery version/jquery-3.0.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/jq/jquery-3.0.0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery version/jquery-3.0.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/jq/jquery-3.0.0.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery version/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/jq/jquery-ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery version/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/jq/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case/Case-02-CallbackHell/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case/Case-02-CallbackHell/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -100,26 +18,97 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Example/Ex-2.2.01-Extend.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Example/Ex-1.2.09-Css-Class.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1.2.2-jQ-Css.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jq/jquery-2.2.4.js">
+        <entry file="file://$PROJECT_DIR$/1.1.0-jQ-Introduction.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="405">
+                <caret line="27" selection-start-line="27" selection-end-line="27" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1.1.1-jQ-Selector.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/1.2.1-jQ-Dom.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="810">
+                <caret line="54" column="11" lean-forward="true" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Example/Ex-1.2.03-Selector-find.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2415">
-              <caret line="173" selection-start-line="173" selection-end-line="241" />
+            <state relative-caret-position="480">
+              <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Example/Ex-1.4.01-Dom-wrap.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#5000#7156#0" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Example/Ex-1.7.01-Position-offset&amp;position.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Example/Ex-1.5.01-Event-on&amp;one.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-877" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Example/Ex-1.2.04-Selector-filter&amp;not.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -143,6 +132,8 @@
       <find>&lt;script src=&quot;../jq/jquery-2.2.4.js&quot;&gt;&lt;/script&gt;</find>
       <find>&lt;script src=&quot;../jQuery%20version/jquery-2.2.4.js&quot;&gt;&lt;/script&gt;</find>
       <find>extend</find>
+      <find>on</find>
+      <find>o</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -192,9 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Example/Ex-1.8.01-Tool-$.type.html" />
-        <option value="$PROJECT_DIR$/Example/Ex-1.8.02-Tool-$.trim.html" />
-        <option value="$PROJECT_DIR$/Example/Ex-1.8.02-Tool-$.proxy.html" />
         <option value="$PROJECT_DIR$/Example/Ex-1.8.03-Tool-$.each.html" />
         <option value="$PROJECT_DIR$/Example/Ex-1.8.04-Tool-$.html" />
         <option value="$PROJECT_DIR$/Example/Ex-1.8.05-Tool-$..html" />
@@ -215,7 +203,6 @@
         <option value="$PROJECT_DIR$/Example/Ex-1.9.06-Callback-then2.html" />
         <option value="$PROJECT_DIR$/Example/Ex-1.9.06-Callback-then1.html" />
         <option value="$PROJECT_DIR$/Example/Ex-1.9.08-Callback-then3.html" />
-        <option value="$PROJECT_DIR$/Case/Case-02-CallbackHell/index.html" />
         <option value="$PROJECT_DIR$/Case/Case-02-CallbackHell/js/index.js" />
         <option value="$PROJECT_DIR$/Case/Case-02-CallbackHell/js/index-ajax-then.js" />
         <option value="$PROJECT_DIR$/Example/Ex-1.9.10-Callback-Deferred.html" />
@@ -243,6 +230,10 @@
         <option value="$PROJECT_DIR$/Example/Ex-1.8.06-Tool-$.extend1.html" />
         <option value="$PROJECT_DIR$/Example/Ex-1.8.06-Tool-$.extend2.html" />
         <option value="$PROJECT_DIR$/Example/Ex-2.2.01-Extend.html" />
+        <option value="$PROJECT_DIR$/Example/Ex-2.2.02-fn.html" />
+        <option value="$PROJECT_DIR$/Example/Ex-2.2.02-jQuery-prototype.html" />
+        <option value="$PROJECT_DIR$/Case/Case-02-CallbackHell/index.html" />
+        <option value="$PROJECT_DIR$/Example/Ex-1.2.09-Css-Class.html" />
       </list>
     </option>
   </component>
@@ -268,6 +259,7 @@
       <foldersAlwaysOnTop value="false" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,22 +272,10 @@
               <item name="jQuery-Note" type="462c0819:PsiDirectoryNode" />
               <item name="Example" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="jQuery-Note" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jQuery-Note" type="462c0819:PsiDirectoryNode" />
-              <item name="jq" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jQuery-Note" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jQuery-Note" type="462c0819:PsiDirectoryNode" />
-              <item name="jq" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery-2.2.4.js" type="620a8d5e:NestingTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -407,17 +387,26 @@
       <workItem from="1582096926143" duration="12694000" />
       <workItem from="1582112857642" duration="11597000" />
       <workItem from="1582173698114" duration="31000" />
+      <workItem from="1582173772108" duration="320000" />
+      <workItem from="1582177066599" duration="1968000" />
+      <workItem from="1582264558992" duration="167000" />
+      <workItem from="1582297734612" duration="15000" />
+      <workItem from="1583422894526" duration="46000" />
+      <workItem from="1583423115983" duration="45000" />
+      <workItem from="1583433247619" duration="54000" />
+      <workItem from="1583480123423" duration="27000" />
+      <workItem from="1583486582114" duration="134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206761000" />
+    <option name="totallyTimeSpent" value="209537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="152" y="23" width="1528" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49898374" visible="true" weight="0.263089" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49898374" visible="true" weight="0.21793194" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
@@ -450,205 +439,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/15期线上付费学员课程资料/level one资料/level  one全部录播课资料/2.深入浅出jQuery资料/lesson9 code/3回调地狱.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="65" column="47" lean-forward="true" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case/Case-02-CallbackHell/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Example/Ex-1.9.01-Ajax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-83">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Example/Ex-1.9.06-Callback-then1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Example/Ex-1.9.08-Callback-then3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#209#662#0" />
-            <element signature="e#830#854#0" />
-            <element signature="e#1039#1083#0" />
-            <element signature="e#1265#1309#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Example/Ex-1.9.07-Callback-then2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="e#875#1328#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case/Case-02-CallbackHell/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case/Case-02-CallbackHell/js/index-ajax-then.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="94" column="4" lean-forward="true" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Case/Case-02-CallbackHell/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/15期线上付费学员课程资料/level one资料/level  one全部录播课资料/2.深入浅出jQuery资料/lesson9 code/8-Deferred原理.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Example/Ex-1.9.10-Callback-myDeferred.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myJQuery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="516" column="5" lean-forward="true" selection-start-line="516" selection-start-column="5" selection-end-line="516" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!block;n#startMove#0" />
-            <element signature="e#284#1092#0" />
-            <element signature="e#348#956#0" />
-            <element signature="e#386#465#0" />
-            <element signature="e#471#541#0" />
-            <element signature="e#703#779#0" />
-            <element signature="e#785#858#0" />
-            <element signature="e#899#946#0" />
-            <element signature="e#977#1085#0" />
-            <element signature="e#1237#3126#0" />
-            <element signature="e#1270#1330#0" />
-            <element signature="e#1380#2486#0" />
-            <element signature="e#1391#1518#0" />
-            <element signature="e#1610#1647#0" />
-            <element signature="e#1767#1850#0" />
-            <element signature="e#1922#1994#0" />
-            <element signature="e#2064#2185#0" />
-            <element signature="e#2191#2401#0" />
-            <element signature="e#2309#2391#0" />
-            <element signature="e#2534#3015#0" />
-            <element signature="e#2583#2857#0" />
-            <element signature="e#2623#2847#0" />
-            <element signature="e#2667#2744#0" />
-            <element signature="e#2750#2833#0" />
-            <element signature="e#2867#2940#0" />
-            <element signature="e#3296#3436#0" />
-            <element signature="e#3357#3392#0" />
-            <element signature="e#3600#4162#0" />
-            <element signature="e#3607#3692#0" />
-            <element signature="e#4325#4465#0" />
-            <element signature="e#4633#4972#0" />
-            <element signature="e#4767#4820#0" />
-            <element signature="e#4867#4921#0" />
-            <element signature="e#5133#5162#0" />
-            <element signature="e#5336#5646#0" />
-            <element signature="e#5381#5644#0" />
-            <element signature="e#5417#5466#0" />
-            <element signature="e#5507#5569#0" />
-            <element signature="e#5575#5638#0" />
-            <element signature="e#5817#6150#0" />
-            <element signature="e#5958#6148#0" />
-            <element signature="e#5999#6142#0" />
-            <element signature="e#6071#6130#0" />
-            <element signature="e#6326#6751#0" />
-            <element signature="e#6535#6582#0" />
-            <element signature="e#6922#7242#0" />
-            <element signature="e#7111#7135#0" />
-            <element signature="e#7160#7202#0" />
-            <element signature="e#7423#7937#0" />
-            <element signature="e#7516#7827#0" />
-            <element signature="e#7581#7821#0" />
-            <element signature="e#7638#7809#0" />
-            <element signature="e#7701#7794#0" />
-            <element signature="e#7897#7935#0" />
-            <element signature="e#8110#8271#0" />
-            <element signature="e#8182#8267#0" />
-            <element signature="e#8216#8249#0" />
-            <element signature="e#8440#8467#0" />
-            <element signature="e#8849#8865#0" />
-            <element signature="e#8898#8922#0" />
-            <element signature="e#8993#9017#0" />
-            <element signature="e#8835#8936#0" />
-            <element signature="e#8610#8634#0" />
-            <element signature="e#9312#9375#0" />
-            <element signature="e#8664#8688#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/15期线上付费学员课程资料/level one资料/level  one全部录播课资料/2.深入浅出jQuery资料/lesson9 code/myjQuery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="273" selection-start-line="273" selection-end-line="273" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old/9.1-jQ event.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Example/Ex-1.9.02-Callback-once.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1.8.1-jQ-ToolMethods.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="255">
-            <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Example/Ex-1.9.11-Callback-when.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="120" column="7" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Example/Ex-1.9.05-Callback-deferred.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -676,13 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Example/Ex-1.1.01-Introduction.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -691,16 +474,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jq/fullpage/fullpage.css" />
-    <entry file="file://$PROJECT_DIR$/1.1.0-jQ-Introduction.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="405">
-            <caret line="27" selection-start-line="27" selection-end-line="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jq/fullpage/fullpage.js" />
     <entry file="file://$PROJECT_DIR$/jq/fullpage/jquery-1.8.3.min.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -841,25 +614,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Case/Case-03-Fullpage/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Case/Case-03-Fullpage/src/js/tool/myFullPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1283">
           <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.2.1-jQ-Extend.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -900,20 +658,167 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Example/Ex-2.2.01-Extend.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+        <state relative-caret-position="-1430">
+          <caret line="9" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.2.2-jQ-Prototype.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.2.1-jQ-Extend.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jq/jquery-2.2.4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2415">
-          <caret line="173" selection-start-line="173" selection-end-line="241" />
+        <state relative-caret-position="406">
+          <caret line="102" column="30" lean-forward="true" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#5000#7156#0" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case/Case-02-CallbackHell/js/index-ajax-then.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case/Case-02-CallbackHell/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="49" lean-forward="true" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Example/Ex-2.2.02-jQuery-prototype.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case/Case-02-CallbackHell/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case/Case-01-CallName/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case/Case-01-CallName/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Case/Case-03-Fullpage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Example/Ex-1.2.05-Selector-is&amp;has.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Example/Ex-1.2.09-Css-Class.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.2.2-jQ-Css.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.1.0-jQ-Introduction.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="405">
+            <caret line="27" selection-start-line="27" selection-end-line="27" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.1.1-jQ-Selector.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.2.1-jQ-Dom.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="810">
+            <caret line="54" column="11" lean-forward="true" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Example/Ex-1.2.03-Selector-find.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Example/Ex-1.2.04-Selector-filter&amp;not.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Example/Ex-1.4.01-Dom-wrap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Example/Ex-1.7.01-Position-offset&amp;position.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Example/Ex-1.5.01-Event-on&amp;one.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-877" />
       </provider>
     </entry>
   </component>
